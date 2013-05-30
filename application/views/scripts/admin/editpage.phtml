@@ -1,0 +1,46 @@
+<p><?php include("admin_sidebar.phtml");?></p>
+<div class="language_block" style="float:left;width:900px;">
+<?php include("pages_menu.phtml"); ?>
+<form name="editpage" method="POST" action="">
+<table>
+
+<tr><td colspan="2">Page Title</td></tr>
+<tr><td colspan="2"><input type="text" name="page_title" value="<?php echo $this->fitnessMultiPageData['page_title']; ?>" size="35"></td></tr>
+
+<tr><td colspan="2"><b>Page Sub Content</b></td></tr>
+<tr><td  colspan="2"><textarea id="editor2" name="page_content_sub" cols="75" rows="2"><?php echo $this->fitnessMultiPageData['page_content_sub']; ?></textarea></td></tr>
+
+<?php if($this->pageId == 3){
+	?>
+<tr><td><b>Section1 Title</b></td><td><b>Section2 Title</b></td></tr>
+<tr><td><input type="text" name="page_section1_title" value="<?php echo $this->fitnessMultiPageData['page_section1_title']; ?>" size="35"></td><td><input type="text" name="page_section2_title" value="<?php echo $this->fitnessMultiPageData['page_section2_title']; ?>" size="35"></td></tr>
+
+
+<tr><td><textarea id="editor1" name="page_section1" cols="35" rows="20"><?php echo $this->fitnessMultiPageData['page_section1']; ?></textarea></td><td><textarea id="editor3" name="page_section2" cols="35" rows="20"><?php echo $this->fitnessMultiPageData['page_section2']; ?></textarea></td></tr>
+
+
+<?php } 
+else{?>
+<tr><td colspan="2"><textarea id="editor1" name="page_content" cols="75" rows="20"><?php echo $this->fitnessMultiPageData['page_content']; ?></textarea></td></tr>
+
+<?php } ?>
+<tr><td><input type="hidden" name="langId" value="<?php echo $this->langId; ?>"></td></tr>
+<tr><td><input type="hidden" name="pageId" value="<?php echo $this->pageId; ?>"></td></tr>
+<tr><td colspan="2"><input type="submit" name="pageSubmit" value="Update Page" class="noWarn"></td></tr>
+</table>
+
+
+</form>
+</div>
+<?php if($this->fitnessTranslation['page_title'] !="") {?>
+	
+
+<div style="margin-top:50px;padding-left:10px;float:left;widht:400px;background:#fff;">
+<p><u>Title</u></p>
+<p><?php echo $this->fitnessTranslation['page_title']; ?></p>
+<p><u>Sub Text</u></p>
+<p><?php echo $this->fitnessTranslation['page_content_sub']; ?></p>
+<p><u>Body Content</u></p>
+<p><?php echo $this->fitnessTranslation['page_content']; ?></p>
+</div>
+<?php } ?>

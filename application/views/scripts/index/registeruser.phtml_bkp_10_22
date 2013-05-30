@@ -1,0 +1,95 @@
+<h1 class="register-small"><?php echo $this->translate('Register');?></h1>
+
+<form name="registerUser" method="POST" action="" onsubmit="return validateRegister();">
+<div id="reg">
+<p style="color:red;"><b><?php echo $this->errormsg; ?></b></p>
+<input type="text" name="user_first_name"  class="register"  onblur="if(this.value=='')this.value='<?php echo $this->translate('First Name');?>';" onfocus="if(this.value=='<?php echo $this->translate('First Name');?>')this.value='';" value="<?php if($this->fname != ""){echo $this->fname;}else{echo $this->translate('First Name');}?>">
+<input type="hidden" name="fnameerror" value="<?php echo $this->translate('Please enter your first name');?>">
+
+
+<input type="text" name="user_email" class="register"  onblur="if(this.value=='')this.value='<?php echo $this->translate('Email');?>';" onfocus="if(this.value=='<?php echo $this->translate('Email');?>')this.value='';" value="<?php if($this->email != ""){echo $this->email;}else{echo $this->translate('Email');} ?>">
+<input type="hidden" name="emailerror" value="<?php echo $this->translate('Please enter an email.Your email would be confidential');?>">
+<input type="hidden" name="emailvaliderror" value="<?php echo $this->translate('Please enter a valid email address');?>">
+
+
+<input type="text" name="user_username" class="register"  onblur="if(this.value=='')this.value='<?php echo $this->translate('Username');?>';" onfocus="if(this.value=='<?php echo $this->translate('Username');?>')this.value='';" value="<?php if($this->uname != ""){ echo $this->uname;}else{echo $this->translate('Username');} ?>">
+<input type="hidden" name="usernameerror" value="<?php echo $this->translate('Please enter a username');?>">
+
+
+<input type="text" name="user_password" class="register" onblur="if(this.value=='')this.value='<?php echo $this->translate('Password');?>';" onfocus="if(this.value=='<?php echo $this->translate('Password');?>')this.value='';" value="Password">
+<input type="hidden" name="passworderror" value="<?php echo $this->translate('Please enter a password');?>">
+<input type="hidden" name="passwordlngtherror" value="<?php echo $this->translate('Please enter a password of minimum 6 characters');?>">
+<input type="hidden" name="termserror" value="<?php echo $this->translate('Please accept the terms and conditions to register');?>">
+
+<h4 class="level"><?php echo ucwords($this->translate('Workout Level'));?></h4>
+<![if !IE]>
+<input type="range" id="userlevel"  name="user_level" value="<?php if($this->level !=""){echo $this->level;}else{echo "1";} ?>" min="1" max="3" step="1"> <span id="dos" style="color:#468928;">&nbsp;</span>
+<![endif]>
+<!--[if IE]>
+Beginner<input type="radio" name="user_level" value="1" checked>Advanced<input type="radio" name="user_level" value="2">Expert<input type="radio" name="user_level" value="3">
+<![endif]-->
+
+</div>
+
+<!-- Checkbox -->
+									<div class="checkbox">
+									<li>
+									<fieldset>
+									<![if !IE | (gte IE 8)]><legend id="title2" class="desc"></legend><![endif]>
+									<!--[if lt IE 8]><label id="title2" class="desc"></label><![endif]-->
+									<div>
+										<span>
+										<input id="Field" name="terms" type="checkbox" class="field checkbox" value="First Choice" tabindex="4" onchange="handleInput(this);" />
+										<label class="choice" for="Field"><?php echo $this->translate("I accept the ");?><a href="javascript:void(0);" onclick="mypopup();"><?php echo $this->translate("terms and conditions");?></a></label>
+										</span>
+									</div>
+									</fieldset>
+									</li>
+									</div>
+<div class="button green"><input type="submit" name="registerUser"  value="<?php echo $this->translate('Register');?>"></div>
+
+</form>
+
+
+<div class="checkbox">
+									<li>
+									
+									</li>
+									</div>
+
+								</div>
+								</div>
+								<!-- Text Under Box -->
+								<div id="bottom_text">
+									<?php echo $this->translate('Already have an account');?> ? <a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'login'));?>"><?php echo $this->translate('Sign In');?></a><br/>
+								</div>
+
+								
+<script>
+document.getElementById('userlevel').onchange = function() {
+	
+	  if(this.value == 1)
+      document.getElementById('dos').innerHTML = "Beginner";
+      
+      if(this.value == 2)
+      document.getElementById('dos').innerHTML = "Advanced";
+      
+       if(this.value == 3)
+      document.getElementById('dos').innerHTML = "Expert";
+      
+      
+  };
+  document.getElementById('userlevel').onchange();
+  
+
+function mypopup()
+{
+	var left = (screen.width/2)-(400/2);
+    var top = (screen.height/2)-(400/2);
+    
+    mywindow = window.open ('<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'terms'), $name = null, $reset = true);?>', 'mywindow','location=1,status=1,scrollbars=1, width=600,height=400,top='+top+', left='+left);
+    
+}
+</script>

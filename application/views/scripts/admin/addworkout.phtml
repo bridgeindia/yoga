@@ -1,0 +1,120 @@
+<p ><?php include("exercise_menu.phtml");?></p>
+<div class="workout">
+<p ><?php include("workout_menu.phtml");?></p>
+
+<form method="POST" action="" name="workoutForm" onsubmit="return validateWorkoutForm();">
+<table>
+<tr><td>Exercise Name </td><td><input type="text" name="workout_name"></td></tr>
+<tr><td>Other Side?</td> <td>Yes <input type="radio" name="otherside" value="1" > No <input type="radio" name="otherside" value="0"></td></tr>
+<tr><td>Primary Muscles</td>
+<td>
+<select name="primary_muscle">
+<option value="">Select Primary Muscle</option>
+<?php foreach($this->musclesList as $muscles)
+{  ?>
+
+<option value="<?php echo $muscles['area_id']; ?>"><?php echo $muscles['area_name']; ?></option>
+	
+<?php } ?>
+</select>
+</td></tr>
+
+<tr><td>Secondary Muscles</td>
+<td>
+<select name="secondary_muscle" multiple>
+<option value="">Select Secondary Muscle</option>
+<?php
+$k=1;
+ foreach($this->musclesList as $muscles)
+{  ?>
+
+<option value="<?php echo $muscles['area_id']; ?>" <?php //if($k==1){echo "selected";} ?>><?php echo $muscles['area_name']; ?></option>
+	
+<?php $k=$k+1;} ?>
+</select>
+</td></tr>
+</table>
+<table>
+<tr><td>Yoga Preparation</td><td><textarea name="workout_preparation" cols="35" rows="8"></textarea></td></tr>
+<tr><td>Yoga Caution</td><td><textarea name="workout_execution" cols="35" rows="8"></textarea></td></tr>
+<tr><td>Yoga Beginner Tip</td><td><textarea name="workout_advice" cols="35" rows="8"></textarea></td></tr>
+</table>
+<table>
+<tr><td colspan="5">Equipment Required ?  Yes <input type="radio" name="equipment_required" value="1" checked>   No <input type="radio" name="equipment_required" value="0"></td></tr>
+<tr><td>Equipment</td><td>Home</td><td>Nature</td><td>Hotel</td><td>Office</td></tr>
+<?php 
+$i=1;
+foreach($this->equipmentList as $equipment)
+{  ?>
+
+<tr><td><?php echo $equipment['equipment_name']; ?></td><td><input type="checkbox" name="home" value="<?php echo $equipment['equipment_id']; ?>"></td><td><input type="checkbox" name="nature" value="<?php echo $equipment['equipment_id']; ?>"></td>
+<td><input type="checkbox" name="hotel" value="<?php echo $equipment['equipment_id']; ?>"></td><td><input type="checkbox" name="office" value="<?php echo $equipment['equipment_id']; ?>"></td></tr>
+	
+<?php $i=$i+1;
+} ?>
+<tr><td><input type="hidden" name="exerciseslist" value=""></td></tr>
+<tr><td><input type="hidden" name="home_equipments" value=""></td></tr>
+<tr><td><input type="hidden" name="nature_equipments" value=""></td></tr>
+<tr><td><input type="hidden" name="hotel_equipments" value=""></td></tr>
+<tr><td><input type="hidden" name="office_equipments" value=""></td></tr>
+<tr><td><input type="hidden" name="sec_muscles" value=""></td></tr>
+</table>
+<table>
+<tr><th colspan="3">Ranking</th></tr>
+<tr>
+<?php 
+$d=1;
+foreach($this->musclesList as $muscles)
+{  ?>
+
+<td>
+<?php echo $muscles['area_name']; ?><br/>
+<select name="ranking_<?php echo $muscles['area_id']; ?>">
+<option value=""></option>
+<?php for($i=1;$i<=6;$i++) { ?>
+<option value="<?php echo $i;?>"><?php echo $i;?></option>
+<?php } ?>
+</select>
+
+</td>
+<?php if(($d%8) == 0){echo "</tr><tr>";}?>
+<?php $d=$d+1;} ?>
+</tr>
+</table>
+<table>
+<tr><th colspan="3">Repetition</th></tr>
+
+
+<tr><td>Beginners</td><td><input type="checkbox" name="workout_level[]" value="1" checked> <input type="text" size="4" name="repetition_beginners"></td> <td>advanced</td><td><input type="checkbox" name="workout_level[]" value="2"> <input type="text" size="4" name="repetition_advanced"></td><td>Expert</td><td><input type="checkbox" name="workout_level[]" value="3"> <input type="text" size="4" name="repetition_professional"></td></tr>
+
+</table>
+
+
+<table>
+<tr><th colspan="3">Exercise Documents</th></tr>
+<tr><td>Workout Photo Start</td><td><input type="text" name="photo_start"></td></tr>
+<tr><td>Workout Photo End</td><td><input type="text" name="photo_end"></td></tr>
+<tr><td>Workout Youtube link</td><td><input type="text" name="youtube_link"></td></tr>
+<tr><td>Workout Sound File</td><td><input type="text" name="sound_file"></td></tr>
+<tr><td>Workout video File</td><td><input type="text" name="video_file"></td></tr>
+<tr><td>Workout Poster File</td><td><input type="text" name="poster_video"></td></tr>
+</table>
+
+
+<table>
+<tr><td>Duration of exercise(in seconds)</td>
+<td>
+
+<input type="text" name="timeframes" value="" size="3">
+
+</td>
+</tr>
+<tr><td>Free workout ?</td> <td>Yes <input type="radio" name="workout_pay_status" value="free" checked>   No <input type="radio" name="workout_pay_status" value="paid"></td></tr>
+<tr><td>Workout rate</td><td><input type="text" name="workout_rate" value=""></td></tr>
+<tr><td>Translator check</td><td><input type="checkbox" name="trans_check" value="1"></td></tr>
+<tr><td>Master check</td><td><input type="checkbox" name="master_check"  value="1" <?php if($this->adminType == 2) echo "disabled";?> checked="checked"></td></tr>
+</table>
+<input type="hidden" name="masterStatus" value="1">
+<input type="submit" name="submitWorkoutForm" class="noWarn" value="Add Exercise">
+</form>
+</div>

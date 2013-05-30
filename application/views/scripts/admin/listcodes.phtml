@@ -1,0 +1,35 @@
+<p><?php include("admin_sidebar.phtml");?></p>
+<div class="language_block" style="width:900px;">
+<p><?php include("code_menu.phtml");?></p>
+<table>
+<tr><th>#</th><th>Promotion Code</th><th>Price reduction</th><th>Status</th><th>Edit/Remove</th></tr>
+<?php 
+$i=1;
+
+foreach($this->promotioncodes as $code)
+{?>
+<tr><td><?php echo $i;?></td><td><?php echo $code['promotion_code']; ?></td><td><?php echo $code['price_reduction']; ?></td><td><?php if($code['status'] == 1){echo "Active";}else{echo "Not active";}?></td><td><a href="<?php echo $this->url(array('controller'=>'admin','action'=>'editcode'));?>/codeId/<?php echo  $code['id'];?>"><image src="<?php echo $this->baseUrl();?>/public/images/edit.jpg" /></a>     <a href="javascript:void(0)" onclick="deletefun(<?php echo  $code["id"];?>);"><image src="<?php echo $this->baseUrl();?>/public/images/delete.jpg" /></a></td></tr>
+
+<?php 
+
+$i=$i+1;
+} ?>
+
+</table>
+
+
+
+</div>
+<script type="text/javascript">
+function deletefun(val)
+{
+if(confirm("Do you want to delete this promotion code ?"))
+{
+window.location.href="<?php echo $this->baseUrl();?>/admin/removecode/delete/"+val;
+return false;
+}
+else{
+return false;
+}
+}
+</script>

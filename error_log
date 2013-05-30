@@ -1,0 +1,224 @@
+[08-Apr-2013 05:50:24 UTC] PHP Fatal error:  Uncaught exception 'Zend_Config_Exception' with message 'parse_ini_file(application/config.ini) [<a href='function.parse-ini-file'>function.parse-ini-file</a>]: failed to open stream: No such file or directory' in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('application/con...')
+#1 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('application/con...')
+#2 /home/bridge/public_html/yoga/index.php(23): Zend_Config_Ini->__construct('application/con...', 'general')
+#3 {main}
+  thrown in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php on line 182
+[08-Apr-2013 07:56:24 UTC] PHP Fatal error:  Uncaught exception 'Zend_Config_Exception' with message 'parse_ini_file(application/config.ini) [<a href='function.parse-ini-file'>function.parse-ini-file</a>]: failed to open stream: No such file or directory' in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('application/con...')
+#1 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('application/con...')
+#2 /home/bridge/public_html/yoga/index.php(23): Zend_Config_Ini->__construct('application/con...', 'general')
+#3 {main}
+  thrown in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php on line 182
+[08-Apr-2013 09:26:17 UTC] PHP Fatal error:  Uncaught exception 'Zend_Config_Exception' with message 'parse_ini_file(application/config.ini) [<a href='function.parse-ini-file'>function.parse-ini-file</a>]: failed to open stream: No such file or directory' in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('application/con...')
+#1 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('application/con...')
+#2 /home/bridge/public_html/yoga/index.php(23): Zend_Config_Ini->__construct('application/con...', 'general')
+#3 {main}
+  thrown in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php on line 182
+[08-Apr-2013 16:12:47 UTC] PHP Fatal error:  Uncaught exception 'Zend_Config_Exception' with message 'parse_ini_file(application/config.ini) [<a href='function.parse-ini-file'>function.parse-ini-file</a>]: failed to open stream: No such file or directory' in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('application/con...')
+#1 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('application/con...')
+#2 /home/bridge/public_html/yoga/index.php(23): Zend_Config_Ini->__construct('application/con...', 'general')
+#3 {main}
+  thrown in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php on line 182
+[08-Apr-2013 23:05:35 UTC] PHP Fatal error:  Uncaught exception 'Zend_Config_Exception' with message 'parse_ini_file(application/config.ini) [<a href='function.parse-ini-file'>function.parse-ini-file</a>]: failed to open stream: No such file or directory' in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('application/con...')
+#1 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('application/con...')
+#2 /home/bridge/public_html/yoga/index.php(23): Zend_Config_Ini->__construct('application/con...', 'general')
+#3 {main}
+  thrown in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php on line 182
+[09-Apr-2013 07:34:25 UTC] PHP Fatal error:  Uncaught exception 'Zend_Config_Exception' with message 'parse_ini_file(application/config.ini) [<a href='function.parse-ini-file'>function.parse-ini-file</a>]: failed to open stream: No such file or directory' in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('application/con...')
+#1 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('application/con...')
+#2 /home/bridge/public_html/yoga/index.php(23): Zend_Config_Ini->__construct('application/con...', 'general')
+#3 {main}
+  thrown in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php on line 182
+[10-Apr-2013 19:36:53 UTC] PHP Fatal error:  Uncaught exception 'Zend_Config_Exception' with message 'parse_ini_file(application/config.ini) [<a href='function.parse-ini-file'>function.parse-ini-file</a>]: failed to open stream: No such file or directory' in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('application/con...')
+#1 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('application/con...')
+#2 /home/bridge/public_html/yoga/index.php(23): Zend_Config_Ini->__construct('application/con...', 'general')
+#3 {main}
+  thrown in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php on line 182
+[12-Apr-2013 15:29:23 UTC] PHP Fatal error:  Uncaught exception 'Zend_Config_Exception' with message 'parse_ini_file(application/config.ini) [<a href='function.parse-ini-file'>function.parse-ini-file</a>]: failed to open stream: No such file or directory' in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('application/con...')
+#1 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('application/con...')
+#2 /home/bridge/public_html/yoga/index.php(23): Zend_Config_Ini->__construct('application/con...', 'general')
+#3 {main}
+  thrown in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php on line 182
+[12-Apr-2013 19:01:08 UTC] PHP Fatal error:  Uncaught exception 'Zend_Config_Exception' with message 'parse_ini_file(application/config.ini) [<a href='function.parse-ini-file'>function.parse-ini-file</a>]: failed to open stream: No such file or directory' in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('application/con...')
+#1 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('application/con...')
+#2 /home/bridge/public_html/yoga/index.php(23): Zend_Config_Ini->__construct('application/con...', 'general')
+#3 {main}
+  thrown in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php on line 182
+[12-Apr-2013 22:18:44 UTC] PHP Fatal error:  Uncaught exception 'Zend_Config_Exception' with message 'parse_ini_file(application/config.ini) [<a href='function.parse-ini-file'>function.parse-ini-file</a>]: failed to open stream: No such file or directory' in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('application/con...')
+#1 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('application/con...')
+#2 /home/bridge/public_html/yoga/index.php(23): Zend_Config_Ini->__construct('application/con...', 'general')
+#3 {main}
+  thrown in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php on line 182
+[13-Apr-2013 01:40:54 UTC] PHP Fatal error:  Uncaught exception 'Zend_Config_Exception' with message 'parse_ini_file(application/config.ini) [<a href='function.parse-ini-file'>function.parse-ini-file</a>]: failed to open stream: No such file or directory' in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('application/con...')
+#1 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('application/con...')
+#2 /home/bridge/public_html/yoga/index.php(23): Zend_Config_Ini->__construct('application/con...', 'general')
+#3 {main}
+  thrown in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php on line 182
+[13-Apr-2013 04:47:35 UTC] PHP Fatal error:  Uncaught exception 'Zend_Config_Exception' with message 'parse_ini_file(application/config.ini) [<a href='function.parse-ini-file'>function.parse-ini-file</a>]: failed to open stream: No such file or directory' in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('application/con...')
+#1 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('application/con...')
+#2 /home/bridge/public_html/yoga/index.php(23): Zend_Config_Ini->__construct('application/con...', 'general')
+#3 {main}
+  thrown in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php on line 182
+[13-Apr-2013 07:18:07 UTC] PHP Fatal error:  Uncaught exception 'Zend_Config_Exception' with message 'parse_ini_file(application/config.ini) [<a href='function.parse-ini-file'>function.parse-ini-file</a>]: failed to open stream: No such file or directory' in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('application/con...')
+#1 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('application/con...')
+#2 /home/bridge/public_html/yoga/index.php(23): Zend_Config_Ini->__construct('application/con...', 'general')
+#3 {main}
+  thrown in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php on line 182
+[13-Apr-2013 10:48:57 UTC] PHP Fatal error:  Uncaught exception 'Zend_Config_Exception' with message 'parse_ini_file(application/config.ini) [<a href='function.parse-ini-file'>function.parse-ini-file</a>]: failed to open stream: No such file or directory' in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('application/con...')
+#1 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('application/con...')
+#2 /home/bridge/public_html/yoga/index.php(23): Zend_Config_Ini->__construct('application/con...', 'general')
+#3 {main}
+  thrown in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php on line 182
+[13-Apr-2013 17:02:06 UTC] PHP Fatal error:  Uncaught exception 'Zend_Config_Exception' with message 'parse_ini_file(application/config.ini) [<a href='function.parse-ini-file'>function.parse-ini-file</a>]: failed to open stream: No such file or directory' in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('application/con...')
+#1 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('application/con...')
+#2 /home/bridge/public_html/yoga/index.php(23): Zend_Config_Ini->__construct('application/con...', 'general')
+#3 {main}
+  thrown in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php on line 182
+[14-Apr-2013 20:51:39 UTC] PHP Fatal error:  Uncaught exception 'Zend_Config_Exception' with message 'parse_ini_file(application/config.ini) [<a href='function.parse-ini-file'>function.parse-ini-file</a>]: failed to open stream: No such file or directory' in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('application/con...')
+#1 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('application/con...')
+#2 /home/bridge/public_html/yoga/index.php(23): Zend_Config_Ini->__construct('application/con...', 'general')
+#3 {main}
+  thrown in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php on line 182
+[14-Apr-2013 23:01:40 UTC] PHP Fatal error:  Uncaught exception 'Zend_Config_Exception' with message 'parse_ini_file(application/config.ini) [<a href='function.parse-ini-file'>function.parse-ini-file</a>]: failed to open stream: No such file or directory' in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('application/con...')
+#1 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('application/con...')
+#2 /home/bridge/public_html/yoga/index.php(23): Zend_Config_Ini->__construct('application/con...', 'general')
+#3 {main}
+  thrown in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php on line 182
+[15-Apr-2013 05:39:38 UTC] PHP Fatal error:  Uncaught exception 'Zend_Config_Exception' with message 'parse_ini_file(application/config.ini) [<a href='function.parse-ini-file'>function.parse-ini-file</a>]: failed to open stream: No such file or directory' in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('application/con...')
+#1 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('application/con...')
+#2 /home/bridge/public_html/yoga/index.php(23): Zend_Config_Ini->__construct('application/con...', 'general')
+#3 {main}
+  thrown in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php on line 182
+[15-Apr-2013 08:41:20 UTC] PHP Fatal error:  Uncaught exception 'Zend_Config_Exception' with message 'parse_ini_file(application/config.ini) [<a href='function.parse-ini-file'>function.parse-ini-file</a>]: failed to open stream: No such file or directory' in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('application/con...')
+#1 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('application/con...')
+#2 /home/bridge/public_html/yoga/index.php(23): Zend_Config_Ini->__construct('application/con...', 'general')
+#3 {main}
+  thrown in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php on line 182
+[15-Apr-2013 16:02:48 UTC] PHP Fatal error:  Uncaught exception 'Zend_Config_Exception' with message 'parse_ini_file(application/config.ini) [<a href='function.parse-ini-file'>function.parse-ini-file</a>]: failed to open stream: No such file or directory' in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('application/con...')
+#1 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('application/con...')
+#2 /home/bridge/public_html/yoga/index.php(23): Zend_Config_Ini->__construct('application/con...', 'general')
+#3 {main}
+  thrown in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php on line 182
+[15-Apr-2013 16:36:43 UTC] PHP Fatal error:  Uncaught exception 'Zend_Config_Exception' with message 'parse_ini_file(application/config.ini) [<a href='function.parse-ini-file'>function.parse-ini-file</a>]: failed to open stream: No such file or directory' in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('application/con...')
+#1 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('application/con...')
+#2 /home/bridge/public_html/yoga/index.php(23): Zend_Config_Ini->__construct('application/con...', 'general')
+#3 {main}
+  thrown in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php on line 182
+[15-Apr-2013 19:05:39 UTC] PHP Fatal error:  Uncaught exception 'Zend_Config_Exception' with message 'parse_ini_file(application/config.ini) [<a href='function.parse-ini-file'>function.parse-ini-file</a>]: failed to open stream: No such file or directory' in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('application/con...')
+#1 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('application/con...')
+#2 /home/bridge/public_html/yoga/index.php(23): Zend_Config_Ini->__construct('application/con...', 'general')
+#3 {main}
+  thrown in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php on line 182
+[15-Apr-2013 20:37:03 UTC] PHP Fatal error:  Uncaught exception 'Zend_Config_Exception' with message 'parse_ini_file(application/config.ini) [<a href='function.parse-ini-file'>function.parse-ini-file</a>]: failed to open stream: No such file or directory' in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('application/con...')
+#1 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('application/con...')
+#2 /home/bridge/public_html/yoga/index.php(23): Zend_Config_Ini->__construct('application/con...', 'general')
+#3 {main}
+  thrown in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php on line 182
+[15-Apr-2013 21:09:52 UTC] PHP Fatal error:  Uncaught exception 'Zend_Config_Exception' with message 'parse_ini_file(application/config.ini) [<a href='function.parse-ini-file'>function.parse-ini-file</a>]: failed to open stream: No such file or directory' in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('application/con...')
+#1 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('application/con...')
+#2 /home/bridge/public_html/yoga/index.php(23): Zend_Config_Ini->__construct('application/con...', 'general')
+#3 {main}
+  thrown in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php on line 182
+[16-Apr-2013 22:50:09 UTC] PHP Fatal error:  Uncaught exception 'Zend_Config_Exception' with message 'parse_ini_file(application/config.ini) [<a href='function.parse-ini-file'>function.parse-ini-file</a>]: failed to open stream: No such file or directory' in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('application/con...')
+#1 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('application/con...')
+#2 /home/bridge/public_html/yoga/index.php(23): Zend_Config_Ini->__construct('application/con...', 'general')
+#3 {main}
+  thrown in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php on line 182
+[17-Apr-2013 00:49:12 UTC] PHP Fatal error:  Uncaught exception 'Zend_Config_Exception' with message 'parse_ini_file(application/config.ini) [<a href='function.parse-ini-file'>function.parse-ini-file</a>]: failed to open stream: No such file or directory' in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('application/con...')
+#1 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('application/con...')
+#2 /home/bridge/public_html/yoga/index.php(23): Zend_Config_Ini->__construct('application/con...', 'general')
+#3 {main}
+  thrown in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php on line 182
+[17-Apr-2013 01:09:21 UTC] PHP Fatal error:  Uncaught exception 'Zend_Config_Exception' with message 'parse_ini_file(application/config.ini) [<a href='function.parse-ini-file'>function.parse-ini-file</a>]: failed to open stream: No such file or directory' in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('application/con...')
+#1 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('application/con...')
+#2 /home/bridge/public_html/yoga/index.php(23): Zend_Config_Ini->__construct('application/con...', 'general')
+#3 {main}
+  thrown in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php on line 182
+[17-Apr-2013 07:50:54 UTC] PHP Fatal error:  Uncaught exception 'Zend_Config_Exception' with message 'parse_ini_file(application/config.ini) [<a href='function.parse-ini-file'>function.parse-ini-file</a>]: failed to open stream: No such file or directory' in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('application/con...')
+#1 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('application/con...')
+#2 /home/bridge/public_html/yoga/index.php(23): Zend_Config_Ini->__construct('application/con...', 'general')
+#3 {main}
+  thrown in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php on line 182
+[17-Apr-2013 10:20:36 UTC] PHP Fatal error:  Uncaught exception 'Zend_Config_Exception' with message 'parse_ini_file(application/config.ini) [<a href='function.parse-ini-file'>function.parse-ini-file</a>]: failed to open stream: No such file or directory' in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('application/con...')
+#1 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('application/con...')
+#2 /home/bridge/public_html/yoga/index.php(23): Zend_Config_Ini->__construct('application/con...', 'general')
+#3 {main}
+  thrown in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php on line 182
+[17-Apr-2013 14:04:10 UTC] PHP Fatal error:  Uncaught exception 'Zend_Config_Exception' with message 'parse_ini_file(application/config.ini) [<a href='function.parse-ini-file'>function.parse-ini-file</a>]: failed to open stream: No such file or directory' in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('application/con...')
+#1 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('application/con...')
+#2 /home/bridge/public_html/yoga/index.php(23): Zend_Config_Ini->__construct('application/con...', 'general')
+#3 {main}
+  thrown in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php on line 182
+[17-Apr-2013 21:27:26 UTC] PHP Fatal error:  Uncaught exception 'Zend_Config_Exception' with message 'parse_ini_file(application/config.ini) [<a href='function.parse-ini-file'>function.parse-ini-file</a>]: failed to open stream: No such file or directory' in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('application/con...')
+#1 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('application/con...')
+#2 /home/bridge/public_html/yoga/index.php(23): Zend_Config_Ini->__construct('application/con...', 'general')
+#3 {main}
+  thrown in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php on line 182
+[17-Apr-2013 21:50:40 UTC] PHP Fatal error:  Uncaught exception 'Zend_Config_Exception' with message 'parse_ini_file(application/config.ini) [<a href='function.parse-ini-file'>function.parse-ini-file</a>]: failed to open stream: No such file or directory' in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('application/con...')
+#1 /home/bridge/public_html/yoga/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('application/con...')
+#2 /home/bridge/public_html/yoga/index.php(23): Zend_Config_Ini->__construct('application/con...', 'general')
+#3 {main}
+  thrown in /home/bridge/public_html/yoga/library/Zend/Config/Ini.php on line 182

@@ -1,0 +1,29 @@
+<h1>Sign In</h1>
+<div id="login"><?php echo $this->translate("Sign in using your username and password");?>:<br/>
+
+<?php echo $this->pageTitle ;?>
+
+<?php echo $this->bodyCopy ;?>
+
+<?php echo $this->loginForm() ;?>
+<br/>
+<a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'forgotlogin'), $name = null, $reset = true);?>"><?php echo $this->translate("Forgot password");?> ?</a>
+</div>
+
+ <!-- Checkbox -->
+									<div class="checkbox">
+									<li>
+									
+									</li>
+									</div>
+
+								</div>
+								</div>
+
+								<!-- Text Under Box -->
+								<div id="bottom_text" style="font-size:14px;">
+									<?php echo $this->translate("Don't have an account?");?> <a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'registeruser'), $name = null, $reset = true);?>"><b><?php echo $this->translate("Sign Up");?></b></a><br/>
+									
+								</div>

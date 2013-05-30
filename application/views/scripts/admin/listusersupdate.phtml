@@ -1,0 +1,25 @@
+<p><?php include("admin_sidebar.phtml");?></p>
+<div class="language_block">
+<?php include("users_menu.phtml"); ?>
+<table>
+<tr><th><a href="<?php echo $this->url(array('controller'=>'admin','action'=>'listusersoffer'));?>">Offers</a></th><th><a href="<?php echo $this->url(array('controller'=>'admin','action'=>'listusersupdate'));?>">Updates</a></th><th><a href="<?php echo $this->url(array('controller'=>'admin','action'=>'listusersdnb'));?>">None</a></th></tr>
+
+<tr><th>#</th><th>Name</th><th>Gender</th><th>Email</th></tr>
+<?php 
+$i=1;
+
+foreach($this->listUsers as $user)
+{  if($user['user_id'] !="") {?>
+<tr><td><?php echo $i;?></td><td><?php echo $user['user_first_name']." ".$user['user_surname']; ?></td><td><?php echo $user['user_gender']; ?></td>
+<td><?php echo $user['user_email']; ?></td></tr>
+
+<?php 
+
+$i=$i+1;
+}} ?>
+
+</table>
+
+
+
+</div>

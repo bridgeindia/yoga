@@ -1,0 +1,28 @@
+<p><?php include("admin_sidebar.phtml");?></p>
+<div class="language_block">
+<?php include("pages_menu.phtml"); ?>
+<form name="addNews" method="POST" action="">
+<table>
+<tr><td>News Title</td><td><input type="text" name="news_title"></td></tr>
+<tr valign="top"><td>News </td> <td> <textarea  rows="8" cols="55" name="news"></textarea></td></tr>
+<tr><td>Select Category</td>
+<td>
+<select name="category">
+<option value="">Select a category</option>
+<?php foreach($this->newcategoryList as $cat)
+{?>
+	<option value="<?php echo $cat['category_id'];?>"><?php echo $cat['category_name'];?></option>
+	
+	
+	
+<?php } ?>
+</select>
+</td>
+</tr>
+<tr><td>Date (dd-mm-YYYY) </td><td><input type="text" id="inputField1" name="news_date" value=""/></td></tr>
+<tr><td colspan="2"><input type="submit" name="newsSubmit" value="Add News" class="noWarn"></td></tr>
+</table>
+
+
+</form>
+</div>

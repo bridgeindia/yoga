@@ -1,0 +1,23 @@
+<p><?php include("exercise_menu.phtml");?></p>
+<div class="language_block">
+<?php include("rates_menu.phtml"); ?>
+<form name="editrates" method="POST" action="">
+<table>
+<tr><td>App version</td><td>
+<select name="app_version">
+<option value="">Select an app version</option>
+<option value="1" <?php if($this->rateDetails['app_version'] == 1){echo "selected";}?>>1</option>
+<option value="2" <?php if($this->rateDetails['app_version'] == 2){echo "selected";}?>>2</option>
+<option value="3" <?php if($this->rateDetails['app_version'] == 3){echo "selected";}?>>3</option>
+</select>
+</td></tr>
+
+<tr><td>Workout Rate (single)</td><td><input type="text" name="workout_single_rate" value="<?php echo $this->rateDetails['rate_single_workout'];?>"></td></tr>
+<tr><td>Workout Rate (total)</td><td><input type="text" name="workout_total_rate" value="<?php echo $this->rateDetails['rate_total_workout'];?>"></td></tr>
+<tr><td colspan="2"><input type="hidden" name="rateId" value="<?php echo $this->workoutrateId;?>"></td></tr>
+<tr><td colspan="2"><input type="submit" name="rateSubmit" value="Edit Workout rate" class="noWarn"></td></tr>
+</table>
+
+
+</form>
+</div>

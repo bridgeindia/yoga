@@ -1,0 +1,68 @@
+<?php 
+$fitnessNews            = new FitnessNews();
+$fitnessCategory        = new FitnessNewsCategoryMultilang();
+
+$lang         =  $this->defaultLanguage(); 
+
+if(count($this->newsList) < 1)
+{
+	echo "No articles found";
+}
+$siteUrlSocial            = 'http://'.$_SERVER['SERVER_NAME'].$this->baseUrl();
+$s=0;
+foreach($this->newsList as $news){
+$newsInfo               = $fitnessNews->getNews($news['news_id']);
+$newsCategory           = $newsInfo['news_category'];
+$categoryDetails        = $fitnessCategory->getNewsCategory($newsCategory,$lang);
+
+$old_date = $newsInfo['news_date'];
+$new_date = date('M d , Y ', strtotime($old_date));
+
+
+?>
+									
+							<article class="article">
+								<footer class="info">
+									<nav class="info-list">
+										<ul>
+											<li><?php echo $new_date;?></li>
+											<li id=""><a href="#"><?php echo mb_convert_encoding($categoryDetails['category_name'],"UTF-8"); ?></a> </li>
+										</ul>
+									</nav>
+									<nav class="social-networks">
+										<ul>
+											<li><a href="http://twitter.com/home?status=Check out fitness4.me news: <?php echo mb_convert_encoding($news['news_title'],"UTF-8");?> at <?php echo $siteUrlSocial;?>/index/news" target="_blank" class="twitter"></a>
+											</li>
+											<li><a  href="http://www.facebook.com/dialog/feed?app_id=255199501258840&link=<?php echo $siteUrlSocial;?>&name=<?php echo mb_convert_encoding($news['news_title'],"UTF-8");?>&caption=<?php echo  mb_convert_encoding($news['news_title'],"UTF-8");?>&redirect_uri=<?php echo $siteUrlSocial;?>/" class="facebook"  title="Share on Facebook" target="_blank">Share on Facebook</a></li>
+										</ul>
+									</nav>
+								</footer>
+								<div class="txt">
+									<h2><?php echo mb_convert_encoding($news['news_title'],"UTF-8");?></h2>
+									<div id="news_<?php echo $s;?>"><?php echo mb_convert_encoding(substr($news['news_content'],0,300),"UTF-8");?></div>
+									<?php if(strlen($news['news_content']) > 310) { ?>
+									<br/><br/><a id="read_more_<?php echo $s;?>" id="more_<?php echo $s;?>" class="more" href="javascript:void(0);" onclick="displayAll(<?php echo $s;?>);">Read more ...</a>								
+									<?php } ?>
+									<div id="news_full_<?php echo $s;?>" style="display:none;"><?php echo mb_convert_encoding($news['news_content'],"UTF-8");?></div>
+									
+								</div>
+							</article>
+							
+							<?php 
+							
+							
+							$s=$s+1;} ?>
+							
+							
+<script>
+
+function displayAll(divid)
+{
+	document.getElementById('news_'+ divid).style.display = "none";
+	document.getElementById('news_full_'+ divid).style.display = "block";
+	document.getElementById('read_more_'+ divid).style.display = "none";
+}
+
+</script>							
+							
+							

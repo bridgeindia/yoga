@@ -1,0 +1,45 @@
+<p><?php include("admin_sidebar.phtml");?></p>
+<div class="plan_block">
+<?php include("plans_menu.phtml"); ?>
+<table>
+<tr><th>#</th><th>Plan Name</th><th>Plan Rate</th><th>Free Months</th><th>Edit</th><th>Translations</th><th>Status</th><th>Remove</th></tr>
+<?php 
+$i=1;
+foreach($this->planData as $plan)
+{?>
+<tr><td><?php echo $i;?></td><td><?php echo $plan['membership_plan']; ?></td>
+<td><?php echo $plan['membership_rate']; ?></td>
+<td><?php echo $plan['membership_offer_period']; ?></td>
+<td><a href="<?php echo $this->url(array('controller'=>'admin','action'=>'editplan'));?>/planId/<?php echo  $plan["membership_id"];?>"><image src="<?php echo $this->baseUrl();?>/public/images/edit.jpg" /></a></td>
+<td>
+<?php foreach($this->languageList as $lang) { ?>
+<a href="<?php echo $this->url(array('controller'=>'admin','action'=>'editplan'));?>/langId/<?php echo $lang['language_id']; ?>/planId/<?php echo $plan["membership_id"]; ?>"><image src="<?php echo $this->baseUrl();?>/public/images/languages/<?php echo $lang['language_code']; ?>.png" /></a>
+<?php } ?>
+</td>
+<td><?php if($plan['membership_status']==1){?> <a href="<?php echo $this->url(array('controller'=>'admin','action'=>'setstatusplan'));?>/planStatus/0/planId/<?php echo  $plan["membership_id"];?>">Active</a>  <?php }else {?> <a href="<?php echo $this->url(array('controller'=>'admin','action'=>'setstatusplan'));?>/planStatus/1/planId/<?php echo  $plan["membership_id"];?>">Inactive</a>  <?php }?></td>
+
+<td><a href="javascript:void(0)" onclick="deletefun(<?php echo  $plan["membership_id"];?>);"><image src="<?php echo $this->baseUrl();?>/public/images/delete.jpg" /></a></td>
+
+<?php 
+
+$i=$i+1;
+} ?>
+
+</table>
+
+
+
+</div>
+<script type="text/javascript">
+function deletefun(val)
+{
+if(confirm("Do you want to delete this muscle?"))
+{
+window.location.href="<?php echo $this->baseUrl();?>/admin/removeplan/delete/"+val;
+return false;
+}
+else{
+return false;
+}
+}
+</script>

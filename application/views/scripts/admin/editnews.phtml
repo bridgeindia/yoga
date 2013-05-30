@@ -1,0 +1,30 @@
+<p><?php include("admin_sidebar.phtml");?></p>
+<div class="language_block">
+<?php include("pages_menu.phtml"); ?>
+<form name="editNews" method="POST" action="">
+<table>
+<tr><td>News Title</td><td><input type="text" name="news_title" value="<?php echo $this->fitnessMultiNewsData['news_title']; ?>"></td></tr>
+<tr><td>News</td><td><textarea id="editor1" rows="8" cols="55" name="news"><?php echo $this->fitnessMultiNewsData['news_content']; ?></textarea></td></tr>
+<tr><td>Select Category</td>
+<td>
+<select name="category">
+<option value="">Select a category</option>
+<?php foreach($this->newcategoryList as $cat)
+{?>
+	<option value="<?php echo $cat['category_id'];?>" <?php if($this->fitnessNewsData['news_category'] == $cat['category_id']){echo "selected";}?>><?php echo $cat['category_name'];?></option>
+	
+	
+	
+<?php } ?>
+</select>
+</td>
+</tr>
+<tr><td>Date (dd-mm-YYYY) </td><td><input type="text" name="news_date" id="inputField1" value="<?php echo $this->fitnessNewsData['news_date'];?>"/></td></tr>
+<tr><td><input type="hidden" name="langId" value="<?php echo $this->langId; ?>"></td></tr>
+<tr><td><input type="hidden" name="newsId" value="<?php echo $this->newsId; ?>"></td></tr>
+<tr><td colspan="2"><input type="submit" name="newsSubmit" value="Update News" class="noWarn"></td></tr>
+</table>
+
+
+</form>
+</div>

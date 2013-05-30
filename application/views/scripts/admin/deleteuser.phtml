@@ -1,0 +1,16 @@
+<div align="right"><a href="<?php echo $this->baseUrl(); ?>/admin/logout">Logout</a></div>
+<?php if($this->users) :?>
+<p>
+    Are you sure that you want to delete
+    
+</p>
+<form action="<?php echo $this->url(array('action'=>'delete')); ?>" method="post">
+    <div>
+        <input type="hidden" name="id" value="<?php echo $this->users->id ;?>" />
+        <input type="submit" name="del" value="Yes" />
+        <input type="submit" name="del" value="No" />
+    </div>
+</form>
+<?php else: ?>
+<p> Cannot find user </p>
+<?php endif ;?>

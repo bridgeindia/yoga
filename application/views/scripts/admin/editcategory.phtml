@@ -1,0 +1,15 @@
+<p><?php include("admin_sidebar.phtml");?></p>
+<div class="language_block">
+<?php include("pages_menu.phtml"); ?>
+<form name="editNews" method="POST" action="">
+<table>
+<tr><td>Category</td><td><input type="text" name="category" value="<?php echo $this->fitnessMultiCatData['category_name']; ?>"></td></tr>
+
+<tr><td><input type="hidden" name="langId" value="<?php echo $this->langId; ?>"></td></tr>
+<tr><td><input type="hidden" name="catId" value="<?php echo $this->catId; ?>"></td></tr>
+<tr><td colspan="2"><input type="submit" name="newsSubmit" value="Update Category" class="noWarn"></td></tr>
+</table>
+
+
+</form>
+</div>

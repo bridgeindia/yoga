@@ -1,0 +1,15 @@
+<p><?php include("exercise_menu.phtml");?></p>
+<div class="language_block">
+<?php include("targets_menu.phtml"); ?>
+<form name="edittarget" method="POST" action="">
+<table>
+
+<tr><td>Target Name</td><td><input type="text" name="target_name" value="<?php echo $this->fitnessMultiTargetData['target_name']; ?>"></td></tr>
+<tr><td><input type="hidden" name="langId" value="<?php echo $this->langId; ?>"></td></tr>
+<tr><td><input type="hidden" name="targetId" value="<?php echo $this->targetId; ?>"></td></tr>
+<tr><td colspan="2"><input type="submit" name="targetSubmit" value="Update Target Name" class="noWarn"></td></tr>
+</table>
+
+
+</form>
+</div>

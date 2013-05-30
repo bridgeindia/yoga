@@ -1,0 +1,16 @@
+<div>
+
+<?php 
+$siteUrl            = 'http://'.$_SERVER['SERVER_NAME'].':'.$_SERVER['SERVER_PORT'] .$this->baseUrl();
+if(empty($this->workouts))
+{
+	echo "This exercise has not been added to any workouts yet.";
+}
+
+foreach($this->workouts as $workouts)
+{
+	?>
+	<p><a href="<?php echo $siteUrl;?>/admin/editwork/workId/<?php echo $workouts['id']; ?>"><?php echo $workouts['work_name']; ?></a></p>
+	<?php 
+} ?>
+</div>

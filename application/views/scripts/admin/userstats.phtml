@@ -1,0 +1,27 @@
+<p><?php include("admin_sidebar.phtml");?></p>
+<div class="language_block" style="width:900px;">
+<p><?php include("users_menu.phtml");?></p>
+<table width="300" cellpadding="4" cellspacing="4" border="1" style="font-weight:bold;">
+
+<tr><td>Apple Appstore</td><td><?php echo $this->usersIphone; ?></td></tr>
+<tr><td>Google Markets</td><td><?php echo $this->usersAndroid; ?></td></tr>
+<tr><td>Web</td><td><?php echo $this->usersWeb; ?></td></tr>
+<?php
+
+$totalPromoUsers = 0;
+
+foreach($this->promotionData as $data)
+{
+$totalPromoUsers   = $totalPromoUsers + $data['promotion_users'];
+?>
+	<tr><td><?php echo $data['promotion_name']; ?></td><td><?php echo $data['promotion_users']; ?></td></tr>
+<?php }
+
+?>
+<?php $total = ($this->usersIphone) + ($this->usersAndroid) + ($this->usersWeb) + ($totalPromoUsers);  ?>
+<tr><td>Total Users</td><td><?php echo $total; ?></td></tr>
+</table>
+
+
+
+</div>

@@ -1,0 +1,7 @@
+<h1><?php echo $this->translate('Confirmation');?></h1>
+
+
+<p><?php echo $this->translate("Thank you for confirming your account with fitness4.me. A mail has been sent to you with your login details. Please login to access your workouts."); ?></p>
+<br />
+<a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'login'), $name = null, $reset = true);?>"><img class="login-pic" src="<?php echo $this->baseUrl();?>/public/latest/images/pages/confirmation-go.png" alt="Go" ></a>

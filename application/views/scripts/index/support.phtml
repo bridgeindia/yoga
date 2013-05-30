@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Currency provides up-to-date currency exchange rates, so you always know how much your money is worth. Currencies are provided for over 180 countries, so you will always be able to find out the value of local money when you are traveling." />
+	<meta name="keywords" content="currency, currency.app, iphone, ipod, ipod touch, exchange rate, exchange, currencies, countries, travel, android, windows phone, windows, webos, palm, hp, blackberry" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
+	<title>Fitness4.me</title>
+	<style type="text/css">
+		body {
+			background: #f2f2f2;
+			font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, Verdana, sans-serif; /* Helvetica */
+			font-size: 14px;
+			line-height: 20px;
+			margin: 0;
+			padding: 0;
+		}
+
+		div#container {
+			margin: 0 auto;
+			width: 980px;
+		}
+
+		div#container h2 {
+			margin-left: 54px;
+		}
+
+		div#header {
+			background: url(../images/header.png) no-repeat;
+			display: inline-block;
+			width: 270px;
+			height: 80px;
+			text-indent: -10000px;
+		}
+
+		ul#header-navigation {
+			background: #FDFDFD;
+			background: -moz-linear-gradient(top, #FDFDFD 0%, #EEEEEE 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FDFDFD), color-stop(100%,#EEEEEE));
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FDFDFD', endColorstr='#EEEEEE',GradientType=0 );
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			font-size: 12px;
+			float: right;
+			list-style: none;
+			margin: 30px 0 0 0;
+			padding: 0;
+		}
+
+		ul#header-navigation li {
+			border-right: 1px solid #ccc;
+			display: list-item;
+			float: left;
+			margin: 0;
+			padding: 0;
+			/* padding: 11px 15px; */
+		}
+		
+		ul#header-navigation li:hover {
+			background: #FFFFFF;
+			background: -moz-linear-gradient(top, #FFFFFF 0%, #F2F2F2 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#F2F2F2));
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#F2F2F2',GradientType=0 );
+		}
+		
+		ul#header-navigation li:active {
+			background: #CCCCCC;
+			background: -moz-linear-gradient(top, #CCCCCC 0%, #FAFAFA 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#CCCCCC), color-stop(100%,#FAFAFA));
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CCCCCC', endColorstr='#FAFAFA',GradientType=0 );
+		}
+		
+		ul#header-navigation li.selected {
+			background: #E3E3E3;
+			background: -moz-linear-gradient(top, #E3E3E3 0%, #F2F2F2 12%, #F5F5F5 88%, #EEEEEE 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#E3E3E3), color-stop(12%,#F2F2F2), color-stop(88%,#F5F5F5), color-stop(100%,#EEEEEE));
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E3E3E3', endColorstr='#EEEEEE',GradientType=0 );
+		}
+		
+		ul#header-navigation li:first-child {
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
+		}
+		
+		ul#header-navigation li:last-child {
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
+			border-right: none;
+		}
+		
+		ul#header-navigation li a {
+			color: #000; /* #888 */
+			line-height: 42px;
+			margin: 0;
+			padding: 14px 15px;
+		}
+
+		ul#header-navigation li a:hover {
+			/* color: #08c; */
+			text-decoration: none;
+		}
+
+		div.content {
+			background: white;
+			border-radius: 5px;
+			box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+			-moz-border-radius: 5px;
+			-moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+			-o-border-radius: 5px;
+			-o-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+			-webkit-border-radius: 5px;
+			-webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+			margin: 12px 0 20px 0;
+			padding: 15px 0 0 0;
+			width: 980px;
+		}
+
+		div.content p {
+			color: #333; /* #888 */
+			line-height: 175%;
+			margin: 20px auto;
+			padding: 0px 75px;
+			text-align: justify;
+		}
+
+		div#footer {
+			color: #888;
+			font-size: 10px;
+			text-align: center;
+			padding: 0px 0px 20px 0px;
+		}
+
+		a {
+			color: #08c;
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		img {
+			border: 0px;
+		}
+
+		/* Support */
+
+		ul.faqs {
+			list-style: none;
+			margin: 20px auto;
+			padding: 0px 75px;
+		}
+
+		ul.faqs li {
+			border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+			display: block;
+			line-height: 175%;
+			padding: 15px 0;
+		}
+
+		ul.faqs li:last-child {
+			border-bottom: 0px;
+			padding-bottom: 40px;
+		}
+
+		div#support-email {
+			padding-bottom: 20px;
+		}
+	</style>
+	<!--[if !IE]>-->
+	<link type="text/css" rel="stylesheet" media="only screen and (max-device-width: 480px)" href="../css/support-mobile.css">
+	<!--<![endif]-->
+</head>
+
+<body>
+<div id="container">
+	<div id="header">Fitness4.me</div>
+	<ul id="header-navigation">
+		<li class="selected"><a href="support@fitness4.me">Support</a></li>
+	</ul>
+		<h2>Fitness4.me</h2>
+
+	<div class="content">
+		<h2>Basic App Troubleshooting</h2>
+		<ul class="faqs">
+			<li>
+				<b>Restart your device.</b><br />
+				If you are having problems with the app, try restarting your device first.  This can often solve a lot of problems with any app.
+			</li>
+			<li>
+				<b>Re-install the app.</b><br />
+				If restarting your device doesn't solve the problem, try deleting, re-downloading and re-installing the app.
+			</li>
+		</ul>
+	</div>
+	
+	<div class="content">
+		<h2>Frequently Asked Questions</h2>
+		<ul class="faqs">
+			<li>
+			<a href="http://fitness4.me/index/faq">Please click here</a>
+			</li>
+			
+		</ul>
+	</div>
+	<div id="support-email" class="content">
+		<h2>Have Another Question?</h2>
+		<p>
+			Please send me an
+			<script type="text/javascript">
+				var user = "support";
+				var site = "fitness4.me";
+				document.write('<a href=\"mailto:' + user + '@' + site + '\">');
+				document.write('e-mail</a>.');
+				</script>
+				Be sure to let me know what platform (iPhone, Android, etc.) you are running the app on.
+		</p>
+	</div>
+	<div id="footer">
+		
+		<p>Copyright &#169; 2012 fitness4.me. All rights reserved.</p>
+	</div>
+</div>
+
+</body>
+</html>

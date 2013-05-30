@@ -1,0 +1,39 @@
+<p><?php include("exercise_menu.phtml");?></p>
+<div class="plan_block">
+<?php include("rates_menu.phtml"); ?>
+<table>
+<tr><th>#</th><th>App Version</th><th>workout single rate</th><th>workout bundle rate</th><th>Edit</th><th>Remove</th></tr>
+<?php 
+$i=1;
+foreach($this->rateList as $rate)
+{?>
+<tr><td><?php echo $i;?></td><td><?php echo $rate['app_version']; ?></td>
+<td><?php echo $rate['rate_single_workout']; ?></td>
+<td><?php echo $rate['rate_total_workout']; ?></td>
+<td><a href="<?php echo $this->url(array('controller'=>'admin','action'=>'editrates'));?>/rateId/<?php echo  $rate["id"];?>"><image src="<?php echo $this->baseUrl();?>/public/images/edit.jpg" /></a></td>
+
+<td><a href="javascript:void(0)" onclick="deletefun(<?php echo  $rate["id"];?>);"><image src="<?php echo $this->baseUrl();?>/public/images/delete.jpg" /></a></td>
+
+<?php 
+
+$i=$i+1;
+} ?>
+
+</table>
+
+
+
+</div>
+<script type="text/javascript">
+function deletefun(val)
+{
+if(confirm("Do you want to delete this muscle?"))
+{
+window.location.href="<?php echo $this->baseUrl();?>/admin/removerate/delete/"+val;
+return false;
+}
+else{
+return false;
+}
+}
+</script>

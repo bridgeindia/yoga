@@ -1,0 +1,75 @@
+<p><?php include("exercise_menu.phtml");?></p>
+<div class="language_block">
+<?php include("work_menu.phtml"); ?>
+<form name="addWork" method="POST" action="" onsubmit="return validateWorkForm();" enctype="multipart/form-data">
+<table>
+<tr><td>Workout Name</td><td><input type="text" name="work_name" value=""></td></tr>
+<!--<tr><td>Workout Duration(in minutes)</td><td>
+<select name="work_duration">
+<option value="10">10</option>
+<option value="20">20</option>
+<option value="30">30</option>
+</select>
+</td></tr>-->
+<tr><td>Workout Level</td><td>
+<select name="work_level">
+<option value="1">Beginners</option>
+<option value="2">Advanced</option>
+<option value="3">Expert</option>
+</select>
+</td></tr>
+
+<!--<tr><td>Workout Recovery Time</td><td>
+<select name="work_recovery_time">
+<option value="">Choose Recovery Time</option>
+<option value="15">15</option>
+<option value="30">30</option>
+
+</select>
+</td></tr>
+
+<tr><td>Workout Recovery Interval</td><td>
+<select name="work_recovery_interval">
+<option value="">Choose Recovery Interval</option>
+<option value="1">After Each Exercise</option>
+<option value="2">After every 2 Exercises</option>
+<option value="3">After every 3 Exercises</option>
+<option value="4">After every 4 Exercises</option>
+<option value="5">After every 5 Exercises</option>
+<option value="6">After every 6 Exercises</option>
+
+</select>
+</td></tr>
+-->
+<tr><td>Select Exercises</td>
+<td>
+<?php $siteUrl            = 'http://'.$_SERVER['SERVER_NAME'].':'.$_SERVER['SERVER_PORT'] .$this->baseUrl(); ?>
+<select name="exercises" multiple size="12" >
+<option value="">Select one or more Exercises</option>
+<?php foreach($this->listExercises as $exercise)
+{  ?>
+
+<option value="<?php echo $exercise['exercise_id']; ?>"><?php echo $exercise['exercise_name']; ?></option>
+	
+<?php } ?>
+</select>
+</td></tr>
+<tr><td><input type="button" name="total_time" value="Total Workout Time in minutes" onclick="ajax_getTime('<?php echo $siteUrl; ?>');"></td><td id="totaltime">0</td></tr>
+<tr><td>One Liner</td><td><input type="text" name="description_small" value=""></td></tr>
+<tr><td>Description (detail)</td><td><textarea cols="30" rows="5" name="description_big"></textarea></td></tr>
+
+</table>
+<table>
+<tr><td>Lose Weight</td><td><input type="checkbox" name="filter" value="Lose Weight"></td><td>Total Body</td><td><input type="checkbox" name="filter" value="Total Body"></td><td>Flexibility</td><td><input type="checkbox" name="filter" value="Flexibility"></td></tr>
+<tr><td>Upper Body</td><td><input type="checkbox" name="filter" value="Upper Body"></td><td>Buttocks</td><td><input type="checkbox" name="filter" value="Buttocks"></td><td>Shoulder</td><td><input type="checkbox" name="filter" value="Shoulder"></td></tr>
+<tr><td>Stomach</td><td><input type="checkbox" name="filter" value="Stomach"></td><td>Biceps</td><td><input type="checkbox" name="filter" value="Biceps"></td><td>Neck</td><td><input type="checkbox" name="filter" value="Neck"></td></tr>
+<tr><td>Legs</td><td><input type="checkbox" name="filter" value="Legs"></td><td>Triceps</td><td><input type="checkbox" name="filter" value="Triceps"></td><td>Back</td><td><input type="checkbox" name="filter" value="Back"></td></tr>
+<tr><td>Stomach/Legs/Buttocks</td><td><input type="checkbox" name="filter" value="Stomach/Legs/Buttocks"></td></tr>
+<tr><td><input type="hidden" name="exerciseslist" value=""></td></tr>
+<tr><td><input type="hidden" name="filterlist" value=""></td></tr>
+<tr><td colspan="2"><input type="submit" name="workSubmit" value="Add Workout" class="noWarn"></td></tr>
+</table>
+
+
+</form>
+</div>

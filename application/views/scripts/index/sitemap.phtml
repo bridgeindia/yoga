@@ -1,0 +1,42 @@
+<!-- intro -->
+					<div class="headline solid"></div>
+					<div class="container">
+						<article class="col-13 list-col">
+							<h4>Home</h4>
+							<ul class="list-sitemap">
+								<li>
+									<li><a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'homepage'), $name = null, $reset = true);?>"><?php echo $this->translate("What can we do for you?");?></a></li>
+									<li><a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'workhow'), $name = null, $reset = true);?>"><?php echo $this->translate("How does it work");?></a></li>
+									<li><a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'faq'), $name = null, $reset = true);?>"><?php echo $this->translate("Faqs");?></a></li>
+									<li><a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'truth'), $name = null, $reset = true);?>"><?php echo $this->translate("The truth");?></a></li>
+																		
+								</li>
+							</ul>		
+							
+							<h4>Others</h4>
+							<ul class="list-sitemap">
+								<li>
+									<li><a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'guarantee'), $name = null, $reset = true);?>"><?php echo $this->translate("We Guarantee");?></a></li>
+									<li><a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'credits'), $name = null, $reset = true);?>"><?php echo $this->translate("Credits");?></a></li>
+									<li><a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'privacy'), $name = null, $reset = true);?>"><?php echo $this->translate("Privacy policy");?></a></li>
+									<?php if($this->loginStatus == 1){?>
+									<li><a href="<?php echo $this->url(array('controller'=>'user',
+                                        'action'=>'settings'), $name = null, $reset = true);?>"><?php echo $this->translate("Account Management");?></a></li>
+									<?php } else { ?>
+									<li><a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'login'));?>"><?php echo $this->translate("Account Management");?></a></li>
+									<?php } ?>
+							</ul>						
+							
+						</article>								
+								
+						
+					</div>						
+					

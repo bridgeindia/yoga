@@ -1,0 +1,160 @@
+<p><?php include("admin_sidebar.phtml");?></p>
+
+<?php include("users_menu.phtml"); ?>
+
+
+
+
+<div id="container">
+<div id="settingsRow"><div id="left"><h5>User General</h5></div></div>
+  <div id="row">
+<h5></h5>
+  	<div id="left">
+  		
+  		<p>Name</p>
+  		<p>Date of Birth</p>
+  		<p>Gender</p>
+  		<p>Email</p>
+  		<p>Level</p>
+  	</div>
+
+  	<div id="middle">
+  		
+  		<p><?php echo $this->userGeneralData['user_first_name'] ." ". $this->userGeneralData['user_surname']  ; ?></p>
+  		<p><?php echo $this->userGeneralData['user_dob']; ?></p>
+  		<p><?php echo $this->userGeneralData['user_gender']; ?></p>
+  		<p><?php echo $this->userGeneralData['user_email']; ?></p>
+  		<p><?php if($this->userGeneralData['user_workout_level'] == 1 ){echo "Beginner";}  if($this->userGeneralData['user_workout_level'] == 2 ){echo "Advanced";} if($this->userGeneralData['user_workout_level'] == 3 ){echo "Professional";} ?></p>
+  	</div>
+
+  	
+
+	</div>
+	<div id="settingsRow"><div id="left"><h5>User Settings</h5></div></div>
+	<div id="settingsRow">
+	<h5></h5>
+	<div id="left">
+	<p>User Targets</p>
+	<p>User Interests</p>
+	<p>Member of any Fitness Studio ?</p>
+	<p>Subscriptions?</p>
+	<p>Payment Method</p>
+	</div>
+	
+	
+	<div id="middle">
+	<p><?php echo $this->userTargetData; ?></p>
+	<p><?php echo $this->userInterestData; ?></p>
+	<p><?php if($this->userSettingsData['member_fitnessclub'] == 1){echo "Yes";}else{echo "No";} ?></p>
+	<p><?php if($this->userSettingsData['subscriptions'] == 1){echo "Yes";}else{echo "No";} ?></p>
+	<p></p>
+	</div>
+	
+	</div>
+	
+	
+	<div id="settingsRow"><div id="left"><h5>Workouts Done</h5></div></div>
+	<?php 
+	$i=1;
+	foreach($this->userWorkoutData as $workoutdone){ ?>
+	<div id="settingsRow">
+	<h5><?php echo $i;?></h5>
+	
+	<div id="left">
+	
+	<p>Workout Name </p>
+	
+	<p>Workout Date</p>
+	
+	</div>
+	
+	
+	<div id="middle">
+	<p><?php echo $workoutdone['workout_name']; ?></p>
+	
+	<p><?php echo $workoutdone['workout_date']; ?></p>
+	
+	</div>
+	
+	</div>
+	
+	<?php $i=$i+1;} ?>
+	
+	<div id="settingsRow"><div id="left"><h5>Unlocked workouts</h5></div></div>
+	<?php 
+	$i=1;
+	foreach($this->userWorkoutUnlockedData as $workoutdone){ ?>
+	
+	<div id="settingsRow">
+	<h5><?php echo $i;?></h5>
+	<div id="left">
+	
+	<p>Workout Name </p>
+	<p>Workout Purchased/Free ?</p>
+	<p>Workout Unlocked Date</p>
+	
+	</div>
+	
+	
+	<div id="middle">
+	<p><?php echo $workoutdone['workout_name']; ?></p>
+	<p><?php echo $workoutdone['workout_status']; ?></p>
+	<p><?php echo $workoutdone['workout_date']; ?></p>
+	
+	</div>
+	
+	</div>
+	<?php $i=$i+1;} ?>
+	
+	<div id="settingsRow"><div id="left"><h5>Custom workouts</h5></div></div>
+	<?php 
+	$i=1;
+	foreach($this->userWorkoutCustomData as $custom){ ?>
+	
+	<div id="settingsRow">
+	<h5><?php echo $i;?></h5>
+	<div id="left">
+	
+	<p>Workout Name </p>
+	<p>Workout Purchased/Free ?</p>
+	<p>Workout Unlocked Date</p>
+	
+	</div>
+	
+	
+	<div id="middle">
+	<p><?php echo $custom['workout_name']; ?></p>
+	<p><?php echo $custom['workout_time']; ?></p>
+	<p><?php echo $custom['workout_date']; ?></p>
+	
+	</div>
+	
+	</div>
+	<?php $i=$i+1;} ?>
+	
+	
+	
+	<div id="settingsRow"><div id="left"><h5>User Membership</h5></div></div>
+	<div id="settingsRow">
+	<h5></h5>
+	<div id="left">
+	<p>Plan</p>
+	<p>Trial Months</p>
+    <p>Date of Registration</p>
+	
+	</div>
+	
+	
+	<div id="middle">
+	<p><?php echo $this->userMembershipName; ?></p>
+	<p><?php echo $this->userWorkoutMembershipData['trial_period']; ?></p>
+	<p><?php echo $this->userWorkoutMembershipData['registration_date']; ?></p>
+	
+	
+	</div>
+	
+	</div>
+	
+</div>
+
+

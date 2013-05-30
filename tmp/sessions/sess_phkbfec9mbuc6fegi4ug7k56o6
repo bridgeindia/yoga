@@ -1,0 +1,1 @@
+UserLanguage|a:1:{s:4:"lang";N;}Zend_Auth|a:1:{s:7:"storage";O:8:"stdClass":5:{s:13:"admin_user_id";s:1:"1";s:15:"admin_user_type";s:1:"1";s:14:"admin_username";s:5:"lekha";s:14:"admin_password";s:32:"976fda17a551440d4e62a29c076c3a6f";s:10:"last_login";s:10:"2012-02-23";}}AdminSession|a:1:{s:8:"username";s:5:"lekha";}random_key|i:1367910703;user_file_ext|s:0:"";

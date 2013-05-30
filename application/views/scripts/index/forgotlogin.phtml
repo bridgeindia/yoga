@@ -1,0 +1,36 @@
+<h1><?php echo $this->translate("Forgot your password?"); ?></h1>
+<div id="login">
+<?php if($this->message == ""){?>
+
+<p><?php echo $this->translate("Forgot your password?"); ?></p>
+<p><?php echo $this->translate("Do not worry!"); ?></p>
+<p><?php echo $this->translate("Please type in your email address and we will send you a new one."); ?></p>
+	
+ <?php } ?>
+
+
+<p><?php if($this->message){echo $this->message;}?></p>
+<form name="forgotLogin" action="" method="POST" onsubmit="return validateForgotLogin();">
+<p><?php echo $this->translate("Email");?> :  <input type="text" name="forgot_email" value=""></p>
+<div class="button green">
+<input type="submit" name="forgotSubmit" value="<?php echo $this->translate('Send');?>">
+</div>
+</form>
+</div>
+
+<!-- Checkbox -->
+									<div class="checkbox">
+									<li>
+									
+									</li>
+									</div>
+
+								</div>
+								</div>
+
+								<!-- Text Under Box -->
+								<div id="bottom_text">
+									<?php echo $this->translate("Don't have an account?");?> <a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'registeruser'), $name = null, $reset = true);?>"><?php echo $this->translate("Sign Up");?></a><br/>
+									
+								</div>

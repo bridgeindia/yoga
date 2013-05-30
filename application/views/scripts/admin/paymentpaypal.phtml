@@ -1,0 +1,67 @@
+<div class="workout">
+<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post"> 
+ 
+ <!-- Identify your business so that you can collect the payments. --> 
+ <input type="hidden" name="business" value="lekha_1330672415_biz@bridge-india.in"> 
+ 
+ <!-- Specify a Buy Now button. --> 
+ <input type="hidden" name="cmd" value="_xclick"> 
+ 
+ <!-- Specify details about the item that buyers will purchase. --> 
+ <input type="hidden" name="item_name" value="Hot Sauce-12 oz. Bottle"> 
+ <input type="hidden" name="amount" value="5.95">  
+ <input type="hidden" name="currency_code" value="USD"> 
+ <input type="hidden" name="notify_url" value="http://fitness.bridge-delivery.com/paypal_ipn/ipn.php"> 
+ <input type="hidden" name="return" value="http://fitness.bridge-delivery.com/paypal_ipn/ipn.php"> 
+ 
+ <!-- Display the payment button. --> 
+ <input type="image" name="submit" border="0" 
+ src="https://www.paypal.com/en_US/i/btn/btn_buynow_LG.gif" 
+ alt="PayPal - The safer, easier way to pay online"> 
+ <img alt="" border="0" width="1" height="1" 
+ src="https://www.paypal.com/en_US/i/scr/pixel.gif" > 
+</form>
+
+
+Recurrring payment<br/>
+<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">  
+
+ <!-- Identify your business so that you can collect the payments. -->  
+ <input type="hidden" name="business" value="lekha_1330672415_biz@bridge-india.in">  
+ <!-- Specify a Subscribe button. -->  
+ <input type="hidden" name="cmd" value="_xclick-subscriptions">  
+ <!-- Identify the subscription. -->  
+ <input type="hidden" name="item_name" value="Alice's Weekly Digest">  
+ <input type="hidden" name="item_number" value="DIG Weekly">  
+ <!-- Set the terms of the 1st trial period. -->  
+ <input type="hidden" name="currency_code" value="USD">  
+
+ <input type="hidden" name="a1" value="24">  
+
+ <input type="hidden" name="p1" value="12">  
+
+ <input type="hidden" name="t1" value="M">  
+ 
+ 
+
+ <!-- Set the terms of the regular subscription. -->  
+
+ <input type="hidden" name="a3" value="2.99">  
+
+ <input type="hidden" name="p3" value="1">  
+
+ <input type="hidden" name="t3" value="M">  
+
+ <!-- Set recurring payments until canceled. -->  
+
+ <input type="hidden" name="src" value="1">  
+ 
+ <input type="hidden" name="notify_url" value="http://fitness.bridge-delivery.com/paypal_ipn/ipn.php"> 
+ <input type="hidden" name="return" value="http://fitness.bridge-delivery.com/paypal_ipn/ipn.php"> 
+ 
+ <!-- Display the payment button. -->  
+ 
+ <input type="image" name="submit" border="0"  src="https://www.paypal.com/en_US/i/btn/btn_subscribe_LG.gif"  alt="PayPal - The safer, easier way to pay online">  
+<img alt="" border="0" width="1" height="1" src="https://www.paypal.com/en_US/i/scr/pixel.gif" >  
+</form> 
+</div>

@@ -1,0 +1,42 @@
+<p><?php include("admin_sidebar.phtml");?></p>
+<div class="language_block">
+<?php include("pages_menu.phtml"); ?>
+<table>
+<tr><th>#</th><th>Page Title</th><th>Translations</th><th>Remove</th></tr>
+<?php 
+$i=1;
+foreach($this->listpages as $page)
+{?>
+<tr><td><?php echo $i;?></td><td><?php echo $page['page_title']; ?></td>
+<td>
+<?php foreach($this->languageList as $lang) { ?>
+<a href="<?php echo $this->url(array('controller'=>'admin','action'=>'editpage'));?>/langId/<?php echo $lang['language_id']; ?>/pageId/<?php echo $page['page_id']; ?>"><image src="<?php echo $this->baseUrl();?>/public/images/languages/<?php echo $lang['language_code']; ?>.png" /></a>
+<?php } ?>
+</td>
+
+
+<td><a href="javascript:void(0)" onclick="deletefun(<?php echo  $page["page_id"];?>);"><image src="<?php echo $this->baseUrl();?>/public/images/delete.jpg" /></a></td>
+
+<?php 
+
+$i=$i+1;
+} ?>
+
+</table>
+
+
+
+</div>
+<script type="text/javascript">
+function deletefun(val)
+{
+if(confirm("Do you want to delete this record?"))
+{
+window.location.href="<?php echo $this->baseUrl();?>/admin/removepage/delete/"+val;
+return false;
+}
+else{
+return false;
+}
+}
+</script>

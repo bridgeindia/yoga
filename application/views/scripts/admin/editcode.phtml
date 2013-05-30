@@ -1,0 +1,15 @@
+<p><?php include("admin_sidebar.phtml");?></p>
+<div class="language_block">
+<p><?php include("code_menu.phtml");?></p>
+<form name="editCodes" method="POST" action="" enctype="multipart/form-data">
+<table>
+<tr><td>Promotion Code</td><td><input type="text" name="code_name" value="<?php echo $this->promotioncode['promotion_code'];?>"></td></tr>
+<tr><td>Reduction in price(please enter integer value without currency sign)</td><td><input type="text" name="price_reduction" value="<?php echo $this->promotioncode['price_reduction'];?>"></td></tr>
+<tr><td>Activate</td><td><input type="checkbox" name="code_status" value="1" <?php if($this->promotioncode['status']==1){echo "checked";}?>></td></tr>
+<tr><td><input type="hidden" name="codeId" value="<?php echo $this->promotioncode['id'];?>"></td></tr>
+<tr><td colspan="2"><input type="submit" name="codeSubmit" value="Edit Promotion Code" class="noWarn"></td></tr>
+</table>
+
+
+</form>
+</div>

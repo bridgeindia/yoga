@@ -1,0 +1,20 @@
+<p><?php include("admin_sidebar.phtml");?></p>
+<div class="language_block">
+<?php include("plans_menu.phtml"); ?>
+<form name="editplan" method="POST" action="">
+<table>
+
+<tr><td>Plan Name</td><td><input type="text" name="membership_plan"  value="<?php echo $this->membershipPlan; ?>"  size="30"></td></tr>
+<div>
+<tr><td>Free Months</td><td><input type="text" name="membership_offer_period" <?php if($this->langId !=""){echo "disabled";}?>  value="<?php echo $this->fitnessPlan['membership_offer_period']; ?>"></td></tr>
+<tr><td>Rate(in $)</td><td><input type="text" name="membership_rate" <?php if($this->langId !=""){echo "disabled";}?> value="<?php echo $this->fitnessPlan['membership_rate']; ?>"> </td></tr>
+<tr><td>Description</td><td><textarea name="membership_description" rows="8" cols="55"  <?php if($this->langId ==""){echo "disabled";}?>><?php echo $this->fitnessMultiPlan['membership_description']; ?></textarea> </td></tr>
+
+<tr><td><input type="hidden" name="langId" value="<?php echo $this->langId; ?>"></td></tr>
+<tr><td><input type="hidden" name="planId" value="<?php echo $this->planId; ?>"></td></tr>
+<tr><td colspan="2"><input type="submit" name="planSubmit" value="Update Plan Details" class="noWarn"></td></tr>
+</table>
+
+
+</form>
+</div>

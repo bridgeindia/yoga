@@ -1,0 +1,22 @@
+<p><?php include("exercise_menu.phtml");?></p>
+<div class="language_block">
+<?php include("rates_menu.phtml"); ?>
+<form name="addrates" method="POST" action="">
+<table>
+<tr><td>App version</td><td>
+<select name="app_version">
+<option value="">Select an app version</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+</select>
+</td></tr>
+
+<tr><td>Workout Rate (single)</td><td><input type="text" name="workout_single_rate"></td></tr>
+<tr><td>Workout Rate (total)</td><td><input type="text" name="workout_total_rate"></td></tr>
+<tr><td colspan="2"><input type="submit" name="rateSubmit" value="Add Workout rate" class="noWarn"></td></tr>
+</table>
+
+
+</form>
+</div>

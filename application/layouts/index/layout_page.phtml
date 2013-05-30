@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<head>
+	<?php echo $this->render('index/header.phtml') ;?>
+</head>
+<body>
+<?php 
+//get the current action and controller to redifrcet after language change
+//echo $_SERVER['REQUEST_URI'];
+ $currentPage        =  Zend_Controller_Front::getInstance()->getRequest()->getActionName(); 
+ $currentController  =  Zend_Controller_Front::getInstance()->getRequest()->getControllerName();
+ 
+ ?>
+	<div id="wrapper">
+		<div class="w1">
+			<div class="w2">
+				<!-- header -->
+				<header id="header">
+					<div class="line"></div>
+					<!-- logo -->
+				  	<!-- logo -->
+  				<h1 class="logo"><a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'home'), $name = null, $reset = true);?>">www.fitness4.me</a></h1>
+  				<div id="flags">
+						
+					<a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'setlanguage'), $name = null, $reset = true);?>/lang/en/page/<?php echo $currentPage; ?>/contr/<?php echo $currentController; ?>"><img src="<?php echo $this->baseUrl();?>/public/latest/images/lang/en.png" alt="english" class="right-space" width="24" height="24" /></a>
+<a href="<?php echo $this->url(array('controller'=>'index','action'=>'setlanguage'), $name = null, $reset = true);?>/lang/de/page/<?php echo $currentPage; ?>/contr/<?php echo $currentController; ?>"><img src="<?php echo $this->baseUrl();?>/public/latest/images/lang/de.png" alt="german"  width="24" height="24" /></a>
+</div>
+  					<nav id="nav">
+  						<ul>
+						<?php if($this->loginStatus == 1){?>
+							<li><a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'homepage'), $name = null, $reset = true);?>"><?php echo $this->translate("About fitness4.me");?></a>
+							<ul>	
+										<li><a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'homepage'), $name = null, $reset = true);?>"><?php echo $this->translate("What can we do for you?");?></a></li>
+										<li><a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'workhow'), $name = null, $reset = true);?>"><?php echo $this->translate("How does it work");?>?</a></li>
+										<li><a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'truth'), $name = null, $reset = true);?>"><?php echo $this->translate("The truth");?></a></li>
+
+									</ul>			
+										
+										
+										</li>
+										<?php } else { ?>
+										
+									<li><a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'homepage'), $name = null, $reset = true);?>"><?php echo $this->translate("What can we do for you?");?></a></li>
+										<li><a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'workhow'), $name = null, $reset = true);?>"><?php echo $this->translate("How does it work");?>?</a></li>
+										<li><a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'truth'), $name = null, $reset = true);?>"><?php echo $this->translate("The truth");?></a></li>	
+										
+										<?php } ?>
+										
+										
+										<li><a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'faq'), $name = null, $reset = true);?>"><?php echo $this->translate("FAQs");?></a></li>			
+							<?php if($this->loginStatus == 1){?>
+    							<li><a href="<?php echo $this->url(array('controller'=>'user',
+                                        'action'=>'listworkouts'), $name = null, $reset = true);?>"><?php echo $this->translate("Workouts");?></a></li>
+										
+									<li><a href="<?php echo $this->url(array('controller'=>'user',
+                                        'action'=>'settings'), $name = null, $reset = true);?>"><?php echo $this->translate("Settings");?></a></li>	
+										
+										<?php } ?>
+							
+							
+							<li>
+							<?php if($this->loginStatus == 1){?>
+							<a href="<?php echo $this->url(array('controller'=>'user',
+                                        'action'=>'logout'), $name = null, $reset = true);?>"><?php echo $this->translate("Logout");?></a>
+                                        <?php }else { ?>
+							<a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'login'));?>"><?php echo $this->translate("Login");?></a></li>
+                                        <?php } ?>
+						</ul>
+  					</nav>
+					<ul style="position:absolute;right:30px;top:70px;font-size:11px;"><li style="float:left;list-style:none;"><?php if($this->defaultLang == 1){?>Have you joined us already?<?php }else{ ?>Bist Du bereits angemeldet? <?php } ?> <a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'login'), $name = null, $reset = true);?>"><?php echo $this->translate("Login");?></a></li></ul>
+  				</header>
+				<!-- main -->
+				<div id="main">
+					<!-- intro -->
+					<section class="intro">
+						<?php echo $this->pageTitle ;?>
+						<!-- search -->
+						<form action="<?php echo $this->url(array('controller'=>'search',
+                                        'action'=>'search'), $name = null, $reset = true);?>" method="POST" class="search">
+							<fieldset>
+								<input type="text" name="searchcontent" value="Click or type here to search" class="text" >
+								<input type="submit" value="go" class="submit" >
+							</fieldset>
+						</form>
+					</section>
+					<div class="main-holder">
+						<!-- content -->
+						
+							
+								 <?php  echo $this->layout()->content; ?>
+								
+											
+						
+						
+					</div>
+				</div>
+			</div>
+	    	<!-- footer -->
+  			<footer id="footer">
+  				<div class="footer-holder">
+  					<?php echo $this->render('index/footer.phtml') ;?>
+  				</div>
+  			</footer>
+  		</div>
+  	</div>
+	<script type="text/javascript" charset="utf-8">
+jQuery.noConflict();
+  jQuery(document).ready(function(){
+    jQuery("a[rel^='prettyPhoto']").prettyPhoto({slideshow:false,gallery_markup:'',custom_markup:'',markup: '<div class="pp_pic_holder" style="width:600px;"> \
+						<div class="ppt">&nbsp;</div> \
+						<div class="pp_top"> \
+							<div class="pp_left"></div> \
+							<div class="pp_middle"></div> \
+							<div class="pp_right"></div> \
+						</div> \
+						<div class="pp_content_container"> \
+							<div class="pp_left"> \
+							<div class="pp_right"> \
+								<div class="pp_content" style="height:338px;width:600px;"> \
+									<div class="pp_loaderIcon"></div> \
+									<div class="pp_fade"> \
+										<a href="#" class="pp_expand" title="Expand the image">Expand</a> \
+										<div class="pp_hoverContainer"> \
+											<a class="pp_next" href="#">next</a> \
+											<a class="pp_previous" href="#">previous</a> \
+										</div> \
+										<div id="pp_full_res"></div> \
+										<div class="pp_details" style="width:600px;"> \
+											 \
+											<p class="pp_description"></p> \
+											{pp_social} \
+											 <a class="pp_close" href="#">Close</a> \
+										</div> \
+									</div> \
+								</div> \
+							</div> \
+							</div> \
+						</div> \
+						<div class="pp_bottom"> \
+							<div class="pp_left"></div> \
+							<div class="pp_middle"></div> \
+							<div class="pp_right"></div> \
+						</div> \
+					</div> \
+					<div class="pp_overlay"></div>'});
+  });
+</script>
+</body>
+</html>
+<script type="text/javascript">
+	window.onload = function(){
+		new JsDatePick({
+			useMode:2,
+			target:"inputField",
+			 selectedDate:{
+	            year:1980,
+	            month:1,
+	            day:1
+	       	      },
+		    yearsRange: new Array(1940,2009),
+			dateFormat:"%d-%m-%Y"
+			
+		});
+	};
+</script>

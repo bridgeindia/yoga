@@ -1,0 +1,17 @@
+<p><?php include("admin_sidebar.phtml");?></p>
+<div class="language_block">
+<?php include("plans_menu.phtml"); ?>
+<form name="addplan" method="POST" action="">
+<table>
+
+<tr><td>Plan Name</td><td><input type="text" name="membership_plan"  value=""  size="30"></td></tr>
+<div>
+<tr><td>Free Months</td><td><input type="text" name="membership_offer_period"   value=""></td></tr>
+<tr><td>Rate(in $)</td><td><input type="text" name="membership_rate" value=""> </td></tr>
+<tr><td>Description</td><td><textarea name="membership_description" rows="8" cols="55" ></textarea> </td></tr>
+<tr><td colspan="2"><input type="submit" name="planSubmit" value="Update Plan Details" class="noWarn"></td></tr>
+</table>
+
+
+</form>
+</div>

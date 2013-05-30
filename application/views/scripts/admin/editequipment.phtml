@@ -1,0 +1,14 @@
+<p><?php include("exercise_menu.phtml");?></p>
+<div class="language_block">
+<?php include("equip_menu.phtml"); ?>
+<form name="editequip" method="POST" action="">
+<table>
+<tr><td>Equipment Name</td><td><input type="text" name="equip_name" value="<?php echo $this->fitnessMultiEquipData['equipment_name']; ?>"></td></tr>
+<tr><td><input type="hidden" name="langId" value="<?php echo $this->langId; ?>"></td></tr>
+<tr><td><input type="hidden" name="equipId" value="<?php echo $this->equipId; ?>"></td></tr>
+<tr><td colspan="2"><input type="submit" name="equipSubmit" value="Update Equipment Name" class="noWarn"></td></tr>
+</table>
+
+
+</form>
+</div>

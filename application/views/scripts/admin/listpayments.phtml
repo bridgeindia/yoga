@@ -1,0 +1,76 @@
+<p><?php include("admin_sidebar.phtml");?></p>
+<div class="language_block" style="width:900px;">
+
+<table>
+<tr><td colspan="8"><b>Web Payments</b></td></tr>
+<tr><th>#</th><th>Name</th><th>Payment Method</th><th>Payment Status</th><th>Purchase type</th><th>Amount</th><th>Transaction Id</th><th>Date</th></tr>
+<?php 
+$i=1;
+
+foreach($this->payments as $payment)
+{?>
+<tr><td><?php echo $i;?></td><td><?php echo $payment['user']; ?></td><td><?php echo $payment['payment_method']; ?></td>
+<td><?php echo $payment['status']; ?></td><td><?php echo $payment['type']; ?> workout/s</td>
+<td><?php echo $payment['amount']; ?></td>
+<td><?php echo $payment['trxn']; ?></td>
+<td><?php echo $payment['date']; ?></td>
+<?php 
+
+$i=$i+1;
+} ?>
+
+</table>
+
+
+
+<table>
+<tr><td colspan="8"><b>Android Lite Payments</b></td></tr>
+<tr><th>#</th><th>Name</th><th>Payment Method</th><th>Payment Status</th><th>Purchase type</th><th>Amount</th><th>Transaction Id</th><th>Date</th></tr>
+<?php 
+$i=1;
+
+foreach($this->apppayments as $apppayment)
+{?>
+<tr><td><?php echo $i;?></td><td><?php echo $apppayment['user']; ?></td><td><?php echo $apppayment['payment_method']; ?></td>
+<td><?php echo $apppayment['status']; ?></td><td></td>
+<td><?php echo $apppayment['amount']; ?></td>
+<td><?php echo $apppayment['trxn']; ?></td>
+<td><?php echo $apppayment['date']; ?></td>
+<?php 
+
+$i=$i+1;
+} ?>
+
+</table>
+<br/>
+<table>
+<tr><td colspan="8"><b>10 minute fitness Premium Iphone Purchases</b></td></tr>
+<?php 
+$i=1;
+
+foreach($this->iphonePurchase as $iphone)
+{?>
+<tr><td><?php echo $i;?></td><td><?php echo $iphone['user_first_name'] ." ".$iphone['user_surname']; ?></td></tr>
+
+<?php 
+
+$i=$i+1;
+} ?>
+</table>
+
+<br/>
+<table>
+<tr><td colspan="8"><b>10 minute fitness Premium Android Purchases</b></td></tr>
+<?php 
+$i=1;
+
+foreach($this->androidPurchase as $android)
+{?>
+<tr><td><?php echo $i;?></td><td><?php echo $android['user_first_name'] ." ".$android['user_surname']; ?></td></tr>
+
+<?php 
+
+$i=$i+1;
+} ?>
+</table>
+</div>

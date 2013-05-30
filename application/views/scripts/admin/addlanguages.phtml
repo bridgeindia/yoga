@@ -1,0 +1,14 @@
+<p><?php include("admin_sidebar.phtml");?></p>
+<div class="language_block">
+<?php include("language_menu.phtml"); ?>
+<form name="addLanguage" method="POST" action="" enctype="multipart/form-data">
+<table>
+<tr><td>Language Name(german,swedish etc)</td><td><input type="text" name="language_name" value=""></td></tr>
+<tr><td>Language Code(de,se etc)</td><td><input type="text" name="language_code" value=""></td></tr>
+<tr><td>Upload flag(60x60)</td><td><input type="file" name="language_flag"></td></tr>
+<tr><td colspan="2"><input type="submit" name="languageSubmit" value="Add Language" class="noWarn"></td></tr>
+</table>
+
+
+</form>
+</div>

@@ -1,0 +1,19 @@
+<p><?php include("admin_sidebar.phtml");?></p>
+<div class="language_block">
+<?php include("language_menu.phtml"); ?>
+<table>
+<tr><th>Language</th><th>Language code</th><th>Icon</th><th>Edit</th><th>Default</th><th>Active/inactive</th></tr>
+<?php foreach($this->fitnessLanguages as $lang)
+{?>
+<tr><td><?php echo $lang['language_name']; ?></td><td><?php echo $lang['language_code']; ?></td>
+<td><image src="<?php echo $this->baseUrl();?>/public/images/languages/<?php echo $lang['language_code']; ?>.png" /></td><td><a href="<?php echo $this->url(array('controller'=>'admin','action'=>'editlanguage'));?>/languageId/<?php echo  $lang["language_id"];?>">Edit</a></td>
+<td><?php if($lang['default_language']==1){echo "default";}else {?> <a href="<?php echo $this->url(array('controller'=>'admin','action'=>'setdefaultlanguage'));?>/languageId/<?php echo  $lang["language_id"];?>">Set as default </a>  <?php }?></td>
+<td><?php if($lang['language_state']==1){?> <a href="<?php echo $this->url(array('controller'=>'admin','action'=>'setstatuslanguage'));?>/langStatus/0/languageId/<?php echo  $lang["language_id"];?>">Active</a>  <?php }else {?> <a href="<?php echo $this->url(array('controller'=>'admin','action'=>'setstatuslanguage'));?>/langStatus/1/languageId/<?php echo  $lang["language_id"];?>">Inactive</a>  <?php }?></td></tr>
+
+<?php } ?>
+
+</table>
+
+
+
+</div>

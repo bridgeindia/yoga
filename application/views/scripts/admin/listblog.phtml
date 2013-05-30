@@ -1,0 +1,15 @@
+<div align="right"><a href="<?php echo $this->baseUrl(); ?>/admin/logout">Logout</a></div>
+<table>
+    <?php foreach($this->blogs as $blog): ?>
+    <tr>
+        <td><b><?php echo substr($this->escape($blog->blog),0,50);?></td>
+    </tr>
+    <!--<tr>//<?php echo $this->form; ?> </tr>-->
+    <tr>
+        <td>
+        <?php echo $this->escape($blog->user_name);?></td>
+       
+    </tr>
+    <?php endforeach; ?>
+</table>
+<?php echo $this->form; ?>

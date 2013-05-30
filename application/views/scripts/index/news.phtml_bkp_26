@@ -1,0 +1,62 @@
+<?php 
+$fitnessNews            = new FitnessNews();
+$fitnessCategory        = new FitnessNewsCategoryMultilang();
+
+$lang         =  $this->defaultLanguage(); 
+
+if(count($this->newsList) < 1)
+{
+	echo "No articles found";
+}
+$siteUrlSocial            = 'http://'.$_SERVER['SERVER_NAME'].$this->baseUrl();
+$s=0;
+foreach($this->newsList as $news){
+$newsInfo               = $fitnessNews->getNews($news['news_id']);
+$newsCategory           = $newsInfo['news_category'];
+$categoryDetails        = $fitnessCategory->getNewsCategory($newsCategory,$lang);
+
+$old_date = $newsInfo['news_date'];
+$new_date = date('M d , Y ', strtotime($old_date));
+
+
+?>
+									
+							<article class="article">
+								<footer class="info">
+									<nav class="info-list">
+										<ul>
+											<li><?php echo $new_date;?></li>
+											<li id=""><a href="#"><?php echo $categoryDetails['category_name']; ?></a> </li>
+										</ul>
+									</nav>
+									<nav class="social-networks">
+										<ul>
+											<li><a href="http://twitter.com/home?status=Check out fitness4.me news: <?php echo $news['news_title'];?> at <?php echo $siteUrlSocial;?>/index/news" target="_blank" title="Share on Twitter">Share on Twitter</a>
+											</li><li><a class="facebook"  target="_blank" href="http://www.facebook.com/dialog/feed?
+  app_id=255199501258840&
+  link=<?php echo $siteUrlSocial;?>/&
+  name=<?php echo $news['news_title'];?>&
+  caption=<?php echo  $news['news_title'];?>&
+  description=<?php echo  $news['news_content'];?>&
+  redirect_uri=<?php echo $siteUrlSocial;?>/" title="Share on Facebook">Share on Facebook</a></li>
+										</ul>
+									</nav>
+								</footer>
+								<div class="txt">
+									<h2><?php echo $news['news_title'];?></h2>
+									<p id="news_<?php echo $s;?>"><?php echo substr($news['news_content'],0,120);?></p>
+									<?php if(strlen($news['news_content']) > 120) { ?>
+																	
+									<p id="news_full_<?php echo $s;?>" style="display:none;"><?php echo $news['news_content'];?></p>
+									<a id="more_<?php echo $s;?>" class="more" href="javascript:void(0);" onclick="displayNews(<?php echo $s;?>);">Read more ...</a>
+									<?php } ?>
+								</div>
+							</article>
+							
+							<?php 
+							
+							
+							$s=$s+1;} ?>
+							
+							
+							

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<head>
+	<?php echo $this->render('index/header.phtml') ;?>
+</head>
+<body>
+<?php 
+//get the current action and controller to redifrcet after language change
+//echo $_SERVER['REQUEST_URI'];
+ $currentPage        =  Zend_Controller_Front::getInstance()->getRequest()->getActionName(); 
+ $currentController  =  Zend_Controller_Front::getInstance()->getRequest()->getControllerName();
+ 
+ ?>
+	<div id="wrapper">
+		<div class="w1">
+			<div class="w2">
+					<!-- header -->
+					<header id="header">
+
+						<!-- logo -->
+						<h1 class="logo"><a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'home'), $name = null, $reset = true);?>">www.fitness4.me</a></h1>
+
+						<div id="flags">
+						
+					<a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'setlanguage'), $name = null, $reset = true);?>/lang/en/page/<?php echo $currentPage; ?>/contr/<?php echo $currentController; ?>"><img src="<?php echo $this->baseUrl();?>/public/latest/images/lang/en.png" alt="english" class="right-space" width="24" height="24" /></a>
+<a href="<?php echo $this->url(array('controller'=>'index','action'=>'setlanguage'), $name = null, $reset = true);?>/lang/de/page/<?php echo $currentPage; ?>/contr/<?php echo $currentController; ?>"><img src="<?php echo $this->baseUrl();?>/public/latest/images/lang/de.png" alt="german"  width="24" height="24" /></a>
+</div>
+						<!-- main nav -->
+						<nav id="nav">
+					
+							<ul>
+							<?php if($this->loginStatus == 1){?>
+							<li><a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'homepage'), $name = null, $reset = true);?>"><?php echo $this->translate("About fitness4.me");?></a>
+							<ul>	
+										<li><a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'homepage'), $name = null, $reset = true);?>"><?php echo $this->translate("What can we do for you?");?></a></li>
+										<li><a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'workhow'), $name = null, $reset = true);?>"><?php echo $this->translate("How does it work");?>?</a></li>
+										<li><a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'truth'), $name = null, $reset = true);?>"><?php echo $this->translate("The truth");?></a></li>
+
+									</ul>			
+										
+										
+										</li>
+										<?php } else { ?>
+										
+									<li><a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'homepage'), $name = null, $reset = true);?>"><?php echo $this->translate("What can we do for you?");?></a></li>
+										<li><a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'workhow'), $name = null, $reset = true);?>"><?php echo $this->translate("How does it work");?>?</a></li>
+										<li><a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'truth'), $name = null, $reset = true);?>"><?php echo $this->translate("The truth");?></a></li>	
+										
+										<?php } ?>
+										
+										
+										<li><a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'faq'), $name = null, $reset = true);?>"><?php echo $this->translate("FAQs");?></a></li>			
+							<?php if($this->loginStatus == 1){?>
+    							<li><a href="<?php echo $this->url(array('controller'=>'user',
+                                        'action'=>'listworkouts'), $name = null, $reset = true);?>"><?php echo $this->translate("Workouts");?></a></li>
+										
+									<li><a href="<?php echo $this->url(array('controller'=>'user',
+                                        'action'=>'settings'), $name = null, $reset = true);?>"><?php echo $this->translate("Settings");?></a></li>	
+										
+										<?php } ?>
+							
+							
+							<li>
+							<?php if($this->loginStatus == 1){?>
+							<a href="<?php echo $this->url(array('controller'=>'user',
+                                        'action'=>'logout'), $name = null, $reset = true);?>"><?php echo $this->translate("Logout");?></a>
+                                        <?php }else { ?>
+							<a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'registeruser'));?>"><?php echo $this->translate("Register");?></a></li>
+                                        <?php } ?>
+						</ul>
+					</nav>
+					<ul style="position:absolute;right:30px;top:70px;font-size:11px;"><li style="float:left;list-style:none;"><?php if($this->defaultLang == 1){?>Have you joined us already?<?php }else{ ?>Bist Du bereits angemeldet? <?php } ?> <a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'login'), $name = null, $reset = true);?>"><?php echo $this->translate("Login");?></a></li></ul>
+					</header>
+				<!-- main -->
+				<div id="main">
+					
+						<!-- intro -->
+						<div class="headline solid"></div>
+
+
+						<!-- promo-intro -->
+						<section class="promo-intro">
+							<h1 class="home_ueberschrift_welcome">NEWS</h1>
+							<p><?php echo $this->newsSub;?>
+							</p>
+						</section>
+					
+					
+					<div class="main-holder">
+						<!-- content -->
+						<section class="col" id="content">
+							<!-- article -->
+							
+							<?php  echo $this->layout()->content; ?>
+							
+						</section>
+						<!-- sidebar -->
+						<aside class="col" id="sidebar">
+							<!-- search -->
+							
+							<!-- items -->
+							<nav class="items">
+								<h3><?php echo $this->translate('Categories');?></h3>
+								<ul>
+								<?php $fitnessCategory        = new FitnessNewsCategoryMultilang(); 
+								      $lang                   =  $this->defaultLanguage(); 
+									  $categoryList           =  $fitnessCategory->getAllcategory($lang);
+									  foreach($categoryList as $category)
+									  {
+									  	
+									 
+								?>
+									<li><a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'news'), $name = null, $reset = true);?>/category/<?php echo $category['category_id'];?>"><?php echo $category['category_name']  ?></a></li>
+																		
+									<?php } ?>
+								</ul>
+							</nav>
+							<!-- items -->
+							<nav class="items">
+								<h3><?php echo $this->translate('Archives');?></h3>
+								<ul>
+								<?php 
+								
+								$fitnessNews            = new FitnessNews();
+								$newsList               = $fitnessNews->listNews();
+								$montharr = $this->dateRange;
+foreach(array_keys($montharr) as $year)
+{
+foreach($montharr[$year] as $month)
+{
+
+$old_date = $month;
+$new_date = date('m', strtotime($old_date)). "-".$year;
+print "<li><a href='".$this->url(array('controller'=>'index',
+                                        'action'=>'news'), $name = null, $reset = true)."/date/".$new_date."'>{$month} {$year}</a></li>";
+}
+}
+								
+								?>
+									
+								</ul>
+							</nav>
+							
+							
+						
+						
+							
+						</aside>
+					</div>
+				</div>
+			</div>
+			<!-- footer -->
+			<footer id="footer">
+				<div class="footer-holder">
+					<?php echo $this->render('index/footer.phtml') ;?>
+				</div>
+			</footer>
+		</div>
+	</div>
+</body>
+</html>
+<script>
+function displayNews(rowValue)
+{
+	if(document.getElementById('news_full_'+rowValue).style.display == 'none')
+	{
+	    document.getElementById('news_'+rowValue).style.display = 'none';
+		document.getElementById('news_full_'+rowValue).style.display = 'block';
+		document.getElementById('more_'+rowValue).style.display = 'none';
+		
+	}
+	else
+	{
+		document.getElementById('news_'+rowValue).style.display = 'block';
+		document.getElementById('news_full_'+rowValue).style.display = 'none';
+	}
+}
+</script>

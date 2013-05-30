@@ -1,0 +1,113 @@
+<?php
+session_start();
+$ranStr = md5(microtime());
+$ranStr = substr($ranStr, 0, 6);
+$_SESSION['cap_code'] = $ranStr;
+
+?>
+<div class="container">
+<div class="case">
+							
+							<!-- social-networks -->
+							<nav class="social-networks2">
+								<h4><?php echo $this->translate("Social Media");?></h4>
+								<ul>
+									<li><a href="https://www.facebook.com/Fitness4.me" target="_blank"><?php echo $this->translate("Like us on Facebook");?></a></li>
+									<li><a class="youtube" target="_blank" href="http://www.youtube.com/wwwfitness4me"><?php echo $this->translate("Youtube Channel");?></a></li>
+									<!--<li><a class="twitter" target="_blank" href="#"><?php echo $this->translate("Follow us on Twitter");?></a></li>
+									<li><a class="youtube" target="_blank" href="#"><?php echo $this->translate("Youtube Channel");?></a></li>
+									<li><a class="google" target="_blank" href="#">Google+ Page</a></li>-->
+								</ul>
+								<br />
+								<h4><?php echo $this->translate("Search");?></h4>
+								<form action="<?php echo $this->url(array('controller'=>'search',
+                                        'action'=>'search'), $name = null, $reset = true);?>" method="POST" class="search">
+										<fieldset>
+											<input type="text" name="searchcontent" value="<?php echo $this->translate("Click or type here to search");?>" class="text" >
+											<input type="submit" value="go" class="submit" >
+										</fieldset>
+									</form>
+							</nav>
+							<!-- clients-info -->
+							<nav class="clients-info">
+								<h4><?php echo $this->translate("For Our Clients");?></h4>
+								<ul>
+									<li><a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'faq'), $name = null, $reset = true);?>"><?php echo $this->translate("Frequently Asked Questions");?></a></li>
+									
+									<li>
+							<?php if($this->loginStatus == 1){?>
+							<a href="<?php echo $this->url(array('controller'=>'user',
+                                        'action'=>'logout'), $name = null, $reset = true);?>">Logout</a>
+                                        <?php }else { ?>
+							<a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'login'));?>">Login</a></li>
+                                        <?php } ?>
+										<?php if($this->loginStatus == 1){?>
+									<li><a href="<?php echo $this->url(array('controller'=>'user',
+                                        'action'=>'settings'), $name = null, $reset = true);?>"><?php echo $this->translate("Account Management");?></a></li>
+									<?php } else { ?>
+									<li><a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'login'));?>"><?php echo $this->translate("Account Management");?></a></li>
+									<?php } ?>
+									
+								</ul>
+							</nav>
+							<!-- news -->
+							<nav class="clients-info">
+								<h4><?php echo $this->translate("News");?></h4>
+								<?php $fitnessNews  =  new FitnessNewsMultilang();
+								      $lang         =  $this->defaultLanguage(); 
+									  $newsList     =  $fitnessNews->getAllInterests($lang);
+								?>
+								<ul>
+								<?php 
+								$k=1;
+								foreach($newsList as $news){
+								if($k<=3){
+									
+								
+								?>
+									
+									<li><a href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'news'), $name = null, $reset = true);?>"><?php echo mb_convert_encoding($news['news_title'],"UTF-8");?></a></li>
+									
+									<?php $k=$k+1;}} ?>
+								</ul>
+							</nav>
+							<!-- quick-contact -->
+							<section class="quick-contact">
+								<h4><?php echo $this->translate("Quick Contact");?></h4>
+								
+								<form class="feedback" name="contactform" action="<?php echo $this->baseUrl();?>/index/contactpage" method="POST" onsubmit="return validateContactForm();">
+										<fieldset>
+											<span class="text"><input value="<?php echo $this->translate("Your name");?>" type="text" name="name"></span>
+											<span class="text"><input value="<?php echo $this->translate("Email address");?>" type="text" name="email"></span>
+											<span class="text"><textarea cols="30" rows="10" name="message"><?php echo $this->translate("Your message");?></textarea></span>
+											<span class="text"><input value="<?php echo $ranStr;?>" type="text" name="name" disabled></span>
+											<label><?php echo $this->translate("Enter the code above");?></label>
+                                            <span class="text"><input type="text" name="captcha" id="captcha" /></span>
+											<span class="submit"><?php echo $this->translate("Send");?><input value="Send" type="submit" ></span>
+										</fieldset>
+									</form>
+							</section>
+						</div>
+					</div>
+					<!-- add -->
+					<div class="add">
+						<div class="case">
+							<strong class="copyright">&copy; Copyright 2012 - www.fitness4.me</strong>
+							<nav class="add-nav">
+								<ul>
+								  <li><a class="white" href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'credits'), $name = null, $reset = true);?>"><?php echo $this->translate('Credits'); ?></a></li>
+									<li><a class="white" href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'sitemap'), $name = null, $reset = true);?>"><?php echo $this->translate('Sitemap');?></a></li>
+									<li><a class="white" href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'termsfull'), $name = null, $reset = true);?>"><?php echo $this->translate('Terms of use');?></a></li>
+									<li><a class="white" href="<?php echo $this->url(array('controller'=>'index',
+                                        'action'=>'privacy'), $name = null, $reset = true);?>"><?php echo $this->translate('Privacy policy');?></a></li>
+								</ul>
+							</nav>
+						</div>
+						</div>

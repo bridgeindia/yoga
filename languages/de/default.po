@@ -1,0 +1,1282 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-03-07 11:24+0530\n"
+"PO-Revision-Date: 2013-03-11 16:35+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;translate;setLabel\n"
+"X-Poedit-Basepath: D:\\wamp\\www\\zend\\application\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: views\\scripts\\user\n"
+"X-Poedit-SearchPath-1: views\\scripts\\index\n"
+"X-Poedit-SearchPath-2: .\n"
+
+#: controllers/IndexController.php:144
+#: controllers/fitness2/IndexController.php:138
+msgid "Thank you for contacting us. We will get back to you soon."
+msgstr "Wir bedanken uns für Ihre erfolgreiche Anfrage und melden uns schnellstmöglich zurück"
+
+#: controllers/IndexController.php:148
+#: controllers/fitness2/IndexController.php:142
+msgid "The captcha value you entered is not correct.Please try again."
+msgstr "Der eingegebene Sicherheitscode ist nicht korrekt. Bitte gebe ihn erneut ein."
+
+#: controllers/IndexController.php:620
+#: controllers/fitness2/IndexController.php:616
+msgid "Username exists. Please enter another one."
+msgstr "Username existiert bereits. Bitte geben Sie einen anderen ein."
+
+#: controllers/IndexController.php:892
+#: controllers/fitness2/IndexController.php:913
+msgid "Email does not exist in our database.Please use your registered email"
+msgstr "Diese E-Mail Adresse existiert nicht in unserer Datenbank. Bitte benutze deine registrierte E-Mail Adresse."
+
+#: controllers/IndexController.php:955
+#: controllers/fitness2/IndexController.php:976
+msgid "Your password has been mailed to the email provided."
+msgstr "Ihr Passwort wurde an der E-Mail verschickt worden."
+
+#: controllers/UserController.php:462
+msgid "Please fill out the missing information on the settings page before continuing"
+msgstr "Bitte trage bei den Einstellungen die fehlenden Informationen ein, bevor du fortfährst"
+
+#: forms/ContactForm.php:10
+msgid "Title"
+msgstr "Anrede"
+
+#: forms/ContactForm.php:15
+msgid "First name"
+msgstr "Vorname"
+
+#: forms/ContactForm.php:20
+msgid "Last name"
+msgstr "Nachname"
+
+#: forms/ContactForm.php:25
+msgid "Email address"
+msgstr "E-Mail Adresse"
+
+#: forms/ContactForm.php:33
+msgid "Contact us"
+msgstr "Kontaktieren Sie uns"
+
+#: layouts/latest/layout_guarantee.php:33
+msgid "About fitness4.me"
+msgstr "Über fitness4.me"
+
+#: layouts/latest/layout_guarantee.php:36
+#: layouts/latest/layout_guarantee.php:49
+msgid "What can we do for you?"
+msgstr "Was können wir für dich tun?"
+
+#: layouts/latest/layout_guarantee.php:38
+#: layouts/latest/layout_guarantee.php:51
+msgid "How does it work"
+msgstr "Wie funktioniert es"
+
+#: layouts/latest/layout_guarantee.php:40
+#: layouts/latest/layout_guarantee.php:53
+msgid "The truth"
+msgstr "Wahrheiten"
+
+#: layouts/latest/layout_guarantee.php:59
+msgid "FAQs"
+msgstr "FAQs"
+
+#: layouts/latest/layout_guarantee.php:62
+#, fuzzy
+msgid "Workouts"
+msgstr "Workout Namen"
+
+#: layouts/latest/layout_guarantee.php:65
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: layouts/latest/layout_guarantee.php:73
+msgid "Logout"
+msgstr "Logout"
+
+#: layouts/latest/layout_guarantee.php:76
+msgid "Login"
+msgstr "Login"
+
+#: views/helpers/EmployeeAddForm.php:11
+#: views/helpers/UserRegisterForm.php:11
+#: views/helpers/live/EmployeeAddForm.php:11
+msgid "Name"
+msgstr "Name"
+
+#: views/helpers/EmployeeAddForm.php:16
+#: views/helpers/UserRegisterForm.php:16
+#: views/helpers/live/EmployeeAddForm.php:16
+msgid "Email"
+msgstr "E-Mail"
+
+#: views/helpers/EmployeeAddForm.php:24
+#: views/helpers/UserRegisterForm.php:24
+#: views/helpers/bridge/AdminLoginForm.php:11
+#: views/helpers/bridge/LoginForm.php:11
+#: views/helpers/live/AdminloginForm.php:12
+#: views/helpers/live/EmployeeAddForm.php:24
+msgid "Username"
+msgstr "Benutzername"
+
+#: views/helpers/EmployeeAddForm.php:34
+#: views/helpers/UserRegisterForm.php:34
+#: views/helpers/bridge/AdminLoginForm.php:21
+#: views/helpers/bridge/LoginForm.php:21
+#: views/helpers/live/AdminloginForm.php:22
+#: views/helpers/live/EmployeeAddForm.php:34
+msgid "Password"
+msgstr "Passwort"
+
+#: views\scripts\user/index.phtml:18
+msgid "Welcome User"
+msgstr "Willkommen Anwender/Kunde"
+
+#: views\scripts\user/listcorrect.phtml:5
+#: views\scripts\user/listworkouts.phtml:46
+#: views\scripts\user/list_workouts_bkp8.phtml:5
+msgid "Lose Weight"
+msgstr "Abnehmen"
+
+#: views\scripts\user/listcorrect.phtml:5
+#: views\scripts\user/listworkouts.phtml:49
+#: views\scripts\user/list_workouts_bkp8.phtml:5
+msgid "Total Body"
+msgstr "Ganzkörper"
+
+#: views\scripts\user/listcorrect.phtml:5
+#: views\scripts\user/listworkouts.phtml:55
+#: views\scripts\user/list_workouts_bkp8.phtml:5
+msgid "Flexibility"
+msgstr "Beweglichkeit"
+
+#: views\scripts\user/listcorrect.phtml:6
+#: views\scripts\user/listworkouts.phtml:58
+#: views\scripts\user/list_workouts_bkp8.phtml:6
+msgid "Upper Body"
+msgstr "Oberkörper"
+
+#: views\scripts\user/listcorrect.phtml:6
+#: views\scripts\user/listworkouts.phtml:40
+#: views\scripts\user/list_workouts_bkp8.phtml:6
+msgid "Buttocks"
+msgstr "Gesäß"
+
+#: views\scripts\user/listcorrect.phtml:6
+#: views\scripts\user/listworkouts.phtml:19
+#: views\scripts\user/list_workouts_bkp8.phtml:6
+msgid "Shoulder"
+msgstr "Schulter"
+
+#: views\scripts\user/listcorrect.phtml:7
+#: views\scripts\user/listworkouts.phtml:22
+#: views\scripts\user/list_workouts_bkp8.phtml:7
+msgid "Stomach"
+msgstr "Bauch"
+
+#: views\scripts\user/listcorrect.phtml:7
+#: views\scripts\user/list_workouts_bkp8.phtml:7
+msgid "Biceps"
+msgstr "Bizeps"
+
+#: views\scripts\user/listcorrect.phtml:7
+#: views\scripts\user/listworkouts.phtml:61
+#: views\scripts\user/list_workouts_bkp8.phtml:7
+msgid "Neck"
+msgstr "Nacken"
+
+#: views\scripts\user/listcorrect.phtml:8
+#: views\scripts\user/listworkouts.phtml:26
+#: views\scripts\user/list_workouts_bkp8.phtml:8
+msgid "Legs"
+msgstr "Beine"
+
+#: views\scripts\user/listcorrect.phtml:8
+#: views\scripts\user/list_workouts_bkp8.phtml:8
+msgid "Triceps"
+msgstr "Trizeps"
+
+#: views\scripts\user/listcorrect.phtml:8
+#: views\scripts\user/listworkouts.phtml:43
+#: views\scripts\user/list_workouts_bkp8.phtml:8
+msgid "Back"
+msgstr "Rücken"
+
+#: views\scripts\user/listcorrect.phtml:17
+#: views\scripts\user/listworkouts_bckp.phtml:17
+#: views\scripts\user/list_workouts_bkp8.phtml:17
+msgid "You can select "
+msgstr "Sie können "
+
+#: views\scripts\user/listcorrect.phtml:18
+#: views\scripts\user/listworkouts_bckp.phtml:18
+#: views\scripts\user/list_workouts_bkp8.phtml:18
+msgid "List of 10 minute Workouts"
+msgstr "Liste der  10-minütige Trainingseinheiten"
+
+#: views\scripts\user/listworkouts.phtml:11
+msgid "Muscle Management"
+msgstr "Muskelaufbau"
+
+#: views\scripts\user/listworkouts.phtml:30
+msgid "Stomach/Legs/Buttocks"
+msgstr "Bauch/Beine/Po"
+
+#: views\scripts\user/listworkouts.phtml:64
+msgid "Core"
+msgstr "Core-Muskeln"
+
+#: views\scripts\user/listworkouts.phtml:70
+msgid "Filter"
+msgstr "Filter"
+
+#: views\scripts\user/listworkouts.phtml:71
+msgid "View All"
+msgstr "alle"
+
+#: views\scripts\user/listworkouts.phtml:198
+msgid "chairs"
+msgstr "Stühle"
+
+#: views\scripts\user/listworkouts.phtml:206
+msgid "none"
+msgstr "keine"
+
+#: views\scripts\user/listworkouts_backup.phtml:23
+msgid "List 10 minute Workouts"
+msgstr "Liste der  10-minütige Trainingseinheiten"
+
+#: views\scripts\user/loginform.phtml:2
+msgid "Your account is either inactive or the acount information is incorrect. Please try again."
+msgstr "Ihr Konto ist entweder inaktiv oder die eingegebenen Informationen sind nicht korrekt. Bitte versuchen Sie es erneut."
+
+#: views\scripts\user/membership.phtml:22
+#: views\scripts\user/membershipplans.phtml:22
+msgid "MemberShip Plans"
+msgstr "Mitgliedschaftsplan"
+
+#: views\scripts\user/membership.phtml:48
+#: views\scripts\user/membershipplans.phtml:48
+msgid "Just"
+msgstr "Nur "
+
+#: views\scripts\user/membership.phtml:48
+#: views\scripts\user/membershipplans.phtml:48
+msgid "per month"
+msgstr "pro Monat"
+
+#: views\scripts\user/membership.phtml:49
+#: views\scripts\user/membershipplans.phtml:49
+msgid "Only"
+msgstr "Nur "
+
+#: views\scripts\user/paymentoptions.phtml:15
+msgid "Super Saver"
+msgstr "Super Spar-Angebot"
+
+#: views\scripts\user/paymentoptions.phtml:15
+msgid "Unlock ALL workouts for just"
+msgstr "Schalte alle Workouts für nur"
+
+#: views\scripts\user/paymentpaypal.phtml:1
+#: views\scripts\user/paymentpaypal_test.phtml:1
+msgid "Get your workouts now!"
+msgstr "Erhalte jetzt dein Trainingsprogramm!"
+
+#: views\scripts\user/paymentpaypal.phtml:4
+#: views\scripts\user/paymentpaypal_test.phtml:4
+msgid "Promotion code"
+msgstr "Aktionscode"
+
+#: views\scripts\user/paymentpaypal.phtml:5
+#: views\scripts\user/paymentpaypal_test.phtml:5
+msgid "Please enter your promotion code if you have one."
+msgstr "Bitte geben Sie Ihren Aktionscode ein, wenn vorhanden"
+
+#: views\scripts\user/paymentpaypal.phtml:6
+#: views\scripts\user/paymentpaypal_test.phtml:6
+msgid "Enter your code"
+msgstr "GebenSieIhreKennzahlein"
+
+#: views\scripts\user/paymentpaypal.phtml:20
+#: views\scripts\user/paymentpaypal_test.phtml:20
+msgid "Workout Rate"
+msgstr "Trainingsstufe"
+
+#: views\scripts\user/paymentpaypal.phtml:21
+#: views\scripts\user/paymentpaypal_test.phtml:21
+msgid "Please click on the button below to proceed.<br/> Your workouts will be unlocked in a few minutes after successful payment."
+msgstr "Bitte klicke auf den nachstehenden Button um fortzufahren. Dein Workout wird wenige Minuten nach der erfolgreichen Zahlungsabwicklung freigeschaltet."
+
+#: views\scripts\user/playvideo.phtml:30
+msgid "Equipment"
+msgstr "Equipment"
+
+#: views\scripts\user/playvideo.phtml:36
+msgid "Focus"
+msgstr "Fokus"
+
+#: views\scripts\user/settings.phtml:9
+msgid "Please enter your first name"
+msgstr "Bitte geben Sie Ihren Vornamen"
+
+#: views\scripts\user/settings.phtml:11
+msgid "Last Name"
+msgstr "Nachname"
+
+#: views\scripts\user/settings.phtml:12
+msgid "Address"
+msgstr "Adresse"
+
+#: views\scripts\user/settings.phtml:17
+msgid "Please enter your complete address"
+msgstr "Bitte geben Sie ihre vollständige Adresse an"
+
+#: views\scripts\user/settings.phtml:20
+msgid "City"
+msgstr "Stadt"
+
+#: views\scripts\user/settings.phtml:23
+msgid "Please enter your city"
+msgstr "Bitte gebenSie ihr Stadt an"
+
+#: views\scripts\user/settings.phtml:25
+msgid "Country"
+msgstr "Country"
+
+#: views\scripts\user/settings.phtml:36
+msgid "Please enter a country"
+msgstr "Bitte gebenSie ihr Land an"
+
+#: views\scripts\user/settings.phtml:39
+#, fuzzy
+msgid "Zip code"
+msgstr "Postleitzahl"
+
+#: views\scripts\user/settings.phtml:40
+msgid "Please enter a zipcode"
+msgstr "Bitte geben Sie ihre Postleitzahl an"
+
+#: views\scripts\user/settings.phtml:41
+msgid "Please enter a valid zipcode"
+msgstr "Bitte geben Sie eine gültige Postleitzahl an"
+
+#: views\scripts\user/settings.phtml:44
+msgid "Telephone"
+msgstr "Telefon"
+
+#: views\scripts\user/settings.phtml:46
+msgid "Please enter a valid email address"
+msgstr "Bitte geben Sie eine gültige Email Adresse ein"
+
+#: views\scripts\user/settings.phtml:49
+msgid "Gender"
+msgstr "Geschlecht"
+
+#: views\scripts\user/settings.phtml:52
+msgid "female"
+msgstr "weiblich"
+
+#: views\scripts\user/settings.phtml:53
+msgid "male"
+msgstr "männlich"
+
+#: views\scripts\user/settings.phtml:56
+msgid "Please enter your gender"
+msgstr "Bitte geben Sie ihr Geschlecht an"
+
+#: views\scripts\user/settings.phtml:59
+msgid "Date of Birth"
+msgstr "Geburtsdatum"
+
+#: views\scripts\user/settings.phtml:60
+msgid "Please enter your date of birth"
+msgstr "Bitte geben Sie Ihr Geburtsdatum"
+
+#: views\scripts\user/settings.phtml:61
+msgid "Please accept the terms of use"
+msgstr "Bitte bestätigen Sie die Nutzungsbedingungen"
+
+#: views\scripts\user/settings.phtml:65
+msgid "Level"
+msgstr "Stufe"
+
+#: views\scripts\user/settings.phtml:70
+msgid "Beginner"
+msgstr "Anfänger"
+
+#: views\scripts\user/settings.phtml:71
+msgid "Advanced"
+msgstr "Fortgeschritten"
+
+#: views\scripts\user/settings.phtml:72
+msgid "Expert"
+msgstr "Profi"
+
+#: views\scripts\user/settings.phtml:77
+msgid "Let us know what your targets are"
+msgstr "Teile uns deine Ziele mit!"
+
+#: views\scripts\user/settings.phtml:99
+msgid "Help us focus on what you are interested in ?"
+msgstr "Hilf uns dabei, uns auf deine Interessen zu konzentrieren!"
+
+#: views\scripts\user/settings.phtml:122
+msgid "Are you a  member of any fitness club ?"
+msgstr "Sind Sie Mitglied eines Fitness Clubs"
+
+#: views\scripts\user/settings.phtml:123
+msgid "Yes"
+msgstr "Ja"
+
+#: views\scripts\user/settings.phtml:123
+msgid "No"
+msgstr "Nein"
+
+#: views\scripts\user/settings.phtml:125
+msgid "Yes, I am interested in special offers from your cooperation partners"
+msgstr "Ja, ich interessiere mich für Sonderangebote von Kooperationspartnern"
+
+#: views\scripts\user/settings.phtml:126
+msgid "Once in a while fitness4.me are able to negotiate special deals or other interesting stuff for our users."
+msgstr "Von Zeit zu Zeit kann fitness4.me besondere Deals und andere interessante Angebote für die Mitglieder aushandeln."
+
+#: views\scripts\user/settings.phtml:128
+msgid "Yes, please send me information and updates on new workouts and improvements from fitness4.me"
+msgstr "Ja, bitte schickt mir Informationen und Neuigkeiten bezüglich neuer Workouts und Verbesserungen von fitness4.me."
+
+#: views\scripts\user/settings.phtml:128
+msgid "We are working hard on improving fitness4.me and almost every day you will see new workouts or added functionality."
+msgstr "Wir arbeiten hart daran, fitness.me zu verbessern und du wirst fast jeden Tag neue Workouts oder zusätzliche Funktionen finden."
+
+#: views\scripts\user/settings.phtml:128
+msgid "We would like to keep you informed about these improvements, so you can get the most out of fitness4.me."
+msgstr "Wir möchten dich über diese Verbesserungen gern informieren, damit du wirklich alle Vorteile von fitness4.me nutzen kannst."
+
+#: views\scripts\user/settings.phtml:128
+msgid "Don't worry, we won't spam you with emails everyday."
+msgstr "Keine Sorge, wir werden dein Postfach nicht täglich mit Nachrichten fluten!"
+
+#: views\scripts\user/settings.phtml:130
+msgid "No, I do not want to receive emails from you or your partners."
+msgstr "Nein, ich möchte keine E-Mails von euch oder euren Partnern erhalten."
+
+#: views\scripts\user/settings.phtml:131
+msgid "Please note that you will also miss important information about new incentives from fitness4.me"
+msgstr " Bitte denke daran, dass du wichtige Neuigkeiten zu Bonusaktionen von fitness4.me verpassen wirst. "
+
+#: views\scripts\user/settings.phtml:134
+msgid "Change Password"
+msgstr "Bitte ändere das Passwort."
+
+#: views\scripts\user/settings.phtml:135
+msgid "I accept the terms of use"
+msgstr "Ich akzeptiere die Nutzungsbedingungen"
+
+#: views\scripts\user/settings.phtml:136
+msgid "Terminate account with fitness4me?"
+msgstr "Den Account bei fitness4me löschen?"
+
+#: views\scripts\user/terminateaccount.phtml:1
+msgid "Please let us know your reason to terminate your account with Fitness4me"
+msgstr "BitteteilenSieuns den Grundfür die AuflösungIhresKontosbei Fitness4me mit"
+
+#: views\scripts\user/terminateaccount.phtml:6
+msgid "Submit"
+msgstr "Bestätigen"
+
+#: views\scripts\user/viewstats.phtml:234
+msgid "Workout Statistics"
+msgstr "Workout Namen"
+
+#: views\scripts\user/viewstats.phtml:238
+msgid "Attended Workouts"
+msgstr "Workout Namen"
+
+#: views\scripts\user/viewstats.phtml:266
+msgid "Workout Duration"
+msgstr "Trainingsstufe"
+
+#: views\scripts\user/viewstats.phtml:289
+msgid "News"
+msgstr "Neuigkeiten"
+
+#: views\scripts\user/viewstats.phtml:311
+msgid "Featured Workout"
+msgstr "Liste der  10-minütige Trainingseinheiten"
+
+#: views\scripts\user/viewstats.phtml:319
+msgid "Popular Workouts"
+msgstr "Workout Namen"
+
+#: views\scripts\user/viewstats.phtml:360
+msgid "Popular Tags"
+msgstr "Beliebte Tags"
+
+#: views\scripts\user/fitness2/customstepone.phtml:9
+msgid "How much time have you got"
+msgstr "Wieviel Zeit hast du"
+
+#: views\scripts\user/fitness2/customstepthree.phtml:7
+msgid "What kind of equipment do you have"
+msgstr "Welche Hilfsmittel stehen dir zur Verfügung"
+
+#: views\scripts\user/fitness2/customstepthree.phtml:30
+#: views\scripts\user/fitness2/customworkouts.phtml:217
+#: views\scripts\user/fitness2/editselfmade.phtml:271
+#: views\scripts\user/fitness2/editselfmade_1_15.phtml:166
+msgid "None"
+msgstr "keine"
+
+#: views\scripts\user/fitness2/customsteptwo.phtml:7
+msgid "What would you like to exercise"
+msgstr "Welche Muskeln möchtest du trainieren"
+
+#: views\scripts\user/fitness2/customworkoutname.phtml:7
+#: views\scripts\user/fitness2/editselfmade.phtml:165
+msgid "Name your workout"
+msgstr "Benenne das Workout"
+
+#: views\scripts\user/fitness2/customworkoutname.phtml:19
+msgid "Continue"
+msgstr "Fortfahren"
+
+#: views\scripts\user/fitness2/customworkouts.phtml:225
+msgid "Duration"
+msgstr "Dauer"
+
+#: views\scripts\user/fitness2/editselfmade.phtml:130
+#: views\scripts\user/fitness2/listworkouts.phtml:30
+msgid "Quick Workouts"
+msgstr "Schnelle Workouts"
+
+#: views\scripts\user/fitness2/editselfmade.phtml:131
+#: views\scripts\user/fitness2/listworkouts.phtml:31
+msgid "Personalised Workouts"
+msgstr "Personalisierte Workouts"
+
+#: views\scripts\user/fitness2/editselfmade.phtml:132
+#: views\scripts\user/fitness2/listworkouts.phtml:32
+msgid "Self made Workouts"
+msgstr "Selbst erstellte"
+
+#: views\scripts\user/fitness2/editselfmade.phtml:144
+msgid "Number of exercises"
+msgstr "Anzahl der Übungen"
+
+#: views\scripts\user/fitness2/editselfmade.phtml:145
+msgid "Number of muscle groups trained"
+msgstr "Anzahl der trainierten Muskelgruppen"
+
+#: views\scripts\user/fitness2/editselfmade.phtml:146
+msgid "Total time"
+msgstr "Zeit"
+
+#: views\scripts\user/fitness2/editselfmade.phtml:146
+msgid "Minutes"
+msgstr "Minuten"
+
+#: views\scripts\user/fitness2/editselfmade.phtml:166
+msgid "Save"
+msgstr "Speichern"
+
+#: views\scripts\user/fitness2/editselfmade.phtml:183
+msgid "Click here to filter exercises"
+msgstr "Hier klicken, um die Übungen zu filtern"
+
+#: views\scripts\user/fitness2/editselfmade.phtml:183
+msgid "Close"
+msgstr "schließen"
+
+#: views\scripts\user/fitness2/googleconfirm.phtml:1
+msgid "Your payment is under review by google payments"
+msgstr "Deine Zahlung wird von google payments überprüft"
+
+#: views\scripts\user/fitness2/googleconfirm.phtml:2
+msgid "Please wait for 24 hrs for the processing to be complete"
+msgstr "Bitte warte 24 Std. bis die Bearbeitung abgeschlossen ist"
+
+#: views\scripts\user/fitness2/googleconfirm.phtml:3
+msgid "Your current payment status from google"
+msgstr " Dein aktueller Zahlungs Status von google"
+
+#: views\scripts\user/fitness2/listworkouts.phtml:99
+#: views\scripts\user/fitness2/listworkouts.phtml:100
+#: views\scripts\user/fitness2/listworkouts.phtml:101
+msgid "minute"
+msgstr "minuten"
+
+#: views\scripts\user/fitness2/membership.phtml:31
+msgid "Choose your subscription"
+msgstr "Wähle dein Abonnement"
+
+#: views\scripts\user/fitness2/membership.phtml:92
+msgid "Not Yet"
+msgstr "Noch nicht"
+
+#: views\scripts\user/fitness2/notifycustom.phtml:3
+msgid "As a non-premium member you cannot edit this  workout."
+msgstr "Als Nicht-Premium Mitglied kannst du dieses Workout nicht speichern"
+
+#: views\scripts\user/fitness2/notifycustom.phtml:4
+#: views\scripts\user/fitness2/notifyselfworkout.phtml:4
+msgid "This funtionality is only available for users with full membership."
+msgstr "Diese Funktion ist nur für Benutzer mit einer vollen Mitgliedschaft verfügbar."
+
+#: views\scripts\user/fitness2/notifycustom.phtml:5
+#: views\scripts\user/fitness2/notifyselfworkout.phtml:5
+msgid "Sign up today and get access to even more quick workouts and exercises."
+msgstr "Melde dich heute an und erhalte Zugang zu noch mehr Schnell Workouts und Übungen."
+
+#: views\scripts\user/fitness2/notifycustom.phtml:6
+#: views\scripts\user/fitness2/notifyselfworkout.phtml:6
+msgid "And you can save an unlimited number of personalized and self-made workouts."
+msgstr "Und du kannst unbegrenzt viele personalisierte und selbst erstellte Workouts speichern."
+
+#: views\scripts\user/fitness2/notifycustom.phtml:8
+#: views\scripts\user/fitness2/notifyselfworkout.phtml:8
+#: views\scripts\user/fitness2/notifytrial.phtml:8
+#: views\scripts\user/fitness2/screen1.phtml:12
+#: views\scripts\user/fitness2/screen2.phtml:8
+#: views\scripts\user/fitness2/screen3.phtml:14
+#: views\scripts\user/fitness2/screen4.phtml:15
+#: views\scripts\user/fitness2/screen5.phtml:13
+msgid "Workout ANYTIME and ANYWHERE"
+msgstr "Trainiere WANN und WO du willst"
+
+#: views\scripts\user/fitness2/notifycustom.phtml:15
+#: views\scripts\user/fitness2/notifyselfworkout.phtml:15
+#: views\scripts\user/fitness2/screen1.phtml:19
+#: views\scripts\user/fitness2/screen2.phtml:19
+#: views\scripts\user/fitness2/screen3.phtml:22
+#: views\scripts\user/fitness2/screen4.phtml:22
+#: views\scripts\user/fitness2/screen5.phtml:20
+#: views\scripts\user/fitness2/screenvideo.phtml:15
+msgid "Tell me more"
+msgstr "Erzähle mir mehr"
+
+#: views\scripts\user/fitness2/notifycustom.phtml:17
+#: views\scripts\user/fitness2/notifyselfworkout.phtml:17
+#: views\scripts\user/fitness2/screen1.phtml:21
+#: views\scripts\user/fitness2/screen2.phtml:21
+#: views\scripts\user/fitness2/screen3.phtml:24
+#: views\scripts\user/fitness2/screen4.phtml:24
+#: views\scripts\user/fitness2/screen5.phtml:22
+#: views\scripts\user/fitness2/screen6.phtml:29
+#: views\scripts\user/fitness2/screenvideo.phtml:17
+#, fuzzy
+msgid "fitness4.me video"
+msgstr "Fitness4.me Video"
+
+#: views\scripts\user/fitness2/notifyselfworkout.phtml:3
+msgid "Sorry,but you have already used your trial selfmade workout."
+msgstr "Entschuldigung, aber du hast dein selbst erstelltes Probe Workout schon genutzt."
+
+#: views\scripts\user/fitness2/notifytrial.phtml:3
+msgid "As a non-premium member you cannot save this self made workout."
+msgstr "Als Nicht-Premium Mitglied kannst du dieses selbst erstellte Workout nicht speichern"
+
+#: views\scripts\user/fitness2/notifytrial.phtml:4
+msgid "But you are welcome to try out this great feature"
+msgstr "Aber du bist herzlich eingeladen, dieses tolle Feature auszuprobieren"
+
+#: views\scripts\user/fitness2/notifytrial.phtml:5
+msgid "As a premium member you will have access to even more exercises and quick workouts"
+msgstr "Als Premium Mitglied erhälst du Zugang zu noch mehr Übungen und Schnell-Workouts"
+
+#: views\scripts\user/fitness2/notifytrial.phtml:6
+msgid "And you can save an unlimited amount of personalized and self-made workouts."
+msgstr "Und du kannst unbegrenzt viele personalisierte und selbst erstellte Workouts speichern"
+
+#: views\scripts\user/fitness2/notifytrial.phtml:15
+msgid "Yes, I would like to become a premium member"
+msgstr "Ja, ich möchte Premium-Mitglied werden"
+
+#: views\scripts\user/fitness2/recurringpayment.phtml:32
+msgid "Monthly Membership"
+msgstr "monatlich Mitgliedschaft"
+
+#: views\scripts\user/fitness2/recurringpayment.phtml:36
+msgid "Membership for"
+msgstr "Mitgliedschaft von"
+
+#: views\scripts\user/fitness2/recurringpayment.phtml:36
+msgid "months at the price of"
+msgstr "monate bei die preis von"
+
+#: views\scripts\user/fitness2/recurringpayment.phtml:54
+msgid "Price in Dollars"
+msgstr "Preis in Dollars"
+
+#: views\scripts\user/fitness2/recurringpayment.phtml:55
+#: views\scripts\user/fitness2/recurringpayment.phtml:73
+#: views\scripts\user/fitness2/recurringpayment.phtml:87
+msgid "Price in Pounds"
+msgstr "Preis in Pounds"
+
+#: views\scripts\user/fitness2/recurringpayment.phtml:72
+msgid "Price in Euro"
+msgstr "Preis in Euro"
+
+#: views\scripts\user/fitness2/screen1.phtml:3
+msgid "Become a Premium Member of Fitness4.me and get"
+msgstr "Werde Premium-Mitglied bei Fitness4.me und erhalte"
+
+#: views\scripts\user/fitness2/screen1.phtml:5
+msgid "Unlimited personalized workouts"
+msgstr "unbegrenzte personalisierte Workouts"
+
+#: views\scripts\user/fitness2/screen1.phtml:6
+msgid "Unlimited self-made workouts"
+msgstr "unbegrenzte selbst-erstellte Workouts"
+
+#: views\scripts\user/fitness2/screen1.phtml:7
+msgid "Access to hundreds of quick workouts"
+msgstr "Zugang zu hunderten von Schnell-Workouts"
+
+#: views\scripts\user/fitness2/screen1.phtml:8
+msgid "Access to more than 500 exercises"
+msgstr "Zugang zu mehr als 500 Übungen"
+
+#: views\scripts\user/fitness2/screen1.phtml:9
+msgid "Free apps and cross-platform synchronization."
+msgstr "kostenlose Apps und Cross-Platform-Synchronisation"
+
+#: views\scripts\user/fitness2/screen2.phtml:4
+msgid "A fitness4.me Premium Membership "
+msgstr "Eine Mitgliedschaft bei Fitness4.me"
+
+#: views\scripts\user/fitness2/screen2.phtml:5
+msgid "is all you need to stay fit or get in shape."
+msgstr "ist alles was du brauchst, um fit zu bleiben oder in Form zu kommen"
+
+#: views\scripts\user/fitness2/screen2.phtml:6
+msgid "No need for gyms or expensive equipment."
+msgstr "Du brauchst kein Fitnessstudio oder teures Equipment"
+
+#: views\scripts\user/fitness2/screen2.phtml:10
+msgid "Sign up now"
+msgstr "Melde dich jetzt an"
+
+#: views\scripts\user/fitness2/screen2.phtml:11
+msgid "And test us two months for free"
+msgstr "Und teste uns zwei Monate lang kostenlos"
+
+#: views\scripts\user/fitness2/screen3.phtml:5
+msgid "Stay fit with our quick workouts"
+msgstr "Bleib fit mit unseren Schnell-Workouts"
+
+#: views\scripts\user/fitness2/screen3.phtml:6
+msgid "Would you like to improve certain problem zones"
+msgstr "Möchtest du bestimmte Problemzonen verbessern"
+
+#: views\scripts\user/fitness2/screen3.phtml:7
+msgid "Get the sixpack you dream about"
+msgstr "Endlich den lang ersehnten Waschbrettbauch vorzeigen können"
+
+#: views\scripts\user/fitness2/screen3.phtml:8
+msgid "Loose Weight or get the perfect bikini figure"
+msgstr "Gewicht verlieren oder die perfekte Bikini-Figur bekommen"
+
+#: views\scripts\user/fitness2/screen3.phtml:9
+msgid "Or try our anti age or wake up workouts"
+msgstr "Oder teste unsere Anti-Aging oder Wachmacher-Workouts"
+
+#: views\scripts\user/fitness2/screen3.phtml:10
+msgid "Take a look at our long lists – we add more almost every week."
+msgstr "Wirf einen Blick auf unsere langen Listen-wir fügen fast jede Woche neue Übungen hinzu"
+
+#: views\scripts\user/fitness2/screen3.phtml:12
+msgid "As a Premium member you will have unlimited access to all our exercises and workouts."
+msgstr "Als Premium Mitglied erhälst du Zugang zu noch mehr Übungen und Schnell-Workouts"
+
+#: views\scripts\user/fitness2/screen4.phtml:5
+msgid "Get your own personalized Workouts"
+msgstr "Erhalte jetzt dein Trainingsprogramm!"
+
+#: views\scripts\user/fitness2/screen4.phtml:6
+msgid "Tell us how much time you have and what"
+msgstr "Sage uns wieviel Zeit du hast und was"
+
+#: views\scripts\user/fitness2/screen4.phtml:7
+msgid "you would like to exercise."
+msgstr "du trainieren möchtest"
+
+#: views\scripts\user/fitness2/screen4.phtml:9
+msgid "We will choose exactly which exercises that fits your wishes and"
+msgstr "Wir werden genau die Übungen zusammenstellen, die deinen Wünschen entsprechen und "
+
+#: views\scripts\user/fitness2/screen4.phtml:10
+msgid "design the perfect workout for you."
+msgstr "so das perfekte Workout für dich designen."
+
+#: views\scripts\user/fitness2/screen4.phtml:12
+msgid "As a Premium member you can create and save an unlimited amount of personalized workouts"
+msgstr "Als Premium-Mitglied kannst du unbegrenzt viele personalisierte Workouts erstellen und speichern"
+
+#: views\scripts\user/fitness2/screen5.phtml:3
+msgid "Or would you like to create your own workouts"
+msgstr "Oder möchtest du deine eigenen Workouts erstellen"
+
+#: views\scripts\user/fitness2/screen5.phtml:5
+msgid "Browse around in our database of exercises"
+msgstr "Stöbere in unsere Datenbank voller Übungen"
+
+#: views\scripts\user/fitness2/screen5.phtml:6
+msgid "Filter according to muscle groups"
+msgstr "Benutze die Filterfunktion für verschiedene Muskelgruppen"
+
+#: views\scripts\user/fitness2/screen5.phtml:7
+msgid "Combine the exercises and create your own"
+msgstr "Kombiniere die Übungen und erstelle dein eigenes Workout"
+
+#: views\scripts\user/fitness2/screen5.phtml:8
+msgid "self-made workout"
+msgstr "selbst-erstellte Workouts"
+
+#: views\scripts\user/fitness2/screen5.phtml:10
+msgid "This feature is only available to Premium members"
+msgstr "Diese Funktion ist nur für Benutzer mit einer vollen Mitgliedschaft verfügbar."
+
+#: views\scripts\user/fitness2/screen6.phtml:10
+msgid "What does a Premium Membership"
+msgstr "Was kostet eine Premium-Mitgliedschaft"
+
+#: views\scripts\user/fitness2/screen6.phtml:11
+msgid "cost per month"
+msgstr "pro Monat"
+
+#: views\scripts\user/fitness2/screen6.phtml:13
+msgid "Less than a gallon of gas – but friendlier to the environment"
+msgstr "Weniger als ein paar Liter Benzin- und du schonst die Umwelt"
+
+#: views\scripts\user/fitness2/screen6.phtml:14
+msgid "Less than a Big Mac meal – but better for your body"
+msgstr "Weniger als ein Big Mac Menü- und du tust deinem Körper etwas Gutes"
+
+#: views\scripts\user/fitness2/screen6.phtml:15
+msgid "Less than a beer at your local pub – and you stay sober"
+msgstr "Weniger als ein Bier in der nächsten Kneipe- und du bleibst nüchtern"
+
+#: views\scripts\user/fitness2/screen6.phtml:16
+msgid "Less than a large cup of coffee – but will keep you awake"
+msgstr "Weniger als ein großer Becher Kaffee - und du bleibst trotzdem länger wach"
+
+#: views\scripts\user/fitness2/screen6.phtml:18
+msgid "From just"
+msgstr "Ab"
+
+#: views\scripts\user/fitness2/screen6.phtml:18
+msgid "per Month"
+msgstr "pro Monat"
+
+#: views\scripts\user/fitness2/settings.phtml:12
+msgid "Please enter your last name"
+msgstr "Bitte geben Sie Ihren Vornamen"
+
+#: views\scripts\user/fitness2/settings.phtml:86
+#, fuzzy
+msgid "Status"
+msgstr "Kontaktieren Sie uns"
+
+#: views\scripts\user/fitness2/settings.phtml:159
+msgid "Update Settings"
+msgstr "speichern"
+
+#: views\scripts\user/fitness2/subscriptionmonthly.phtml:4
+#: views\scripts\user/fitness2/subscriptionyearly.phtml:3
+msgid "Congratulations"
+msgstr "Bestätigung"
+
+#: views\scripts\user/fitness2/subscriptionmonthly.phtml:5
+#: views\scripts\user/fitness2/subscriptionyearly.phtml:4
+msgid "You are about to sign up as a"
+msgstr "Du bist dabei, dich als"
+
+#: views\scripts\user/fitness2/subscriptionmonthly.phtml:6
+#: views\scripts\user/fitness2/subscriptionyearly.phtml:5
+msgid "fitness4.me Premium member"
+msgstr "Fitness4.me Premium-Mitglied anzumelden"
+
+#: views\scripts\user/fitness2/subscriptionmonthly.phtml:8
+#: views\scripts\user/fitness2/subscriptionyearly.phtml:7
+msgid "You have chosen the"
+msgstr "Du hast das"
+
+#: views\scripts\user/fitness2/subscriptionmonthly.phtml:9
+msgid "monthly subscription giving you unlimited access to all"
+msgstr "monatliche Abonnement gewählt, das dir unbegrenzten Zugang zu all"
+
+#: views\scripts\user/fitness2/subscriptionmonthly.phtml:10
+msgid "our services on a monthly basis. The first two months are"
+msgstr "unseren Angeboten gewährt. Die ersten zwei Monate sind"
+
+#: views\scripts\user/fitness2/subscriptionmonthly.phtml:11
+msgid "free and you can cancel any time"
+msgstr "kostenfrei und du kannst dich jederzeit wieder abmelden"
+
+#: views\scripts\user/fitness2/subscriptionyearly.phtml:8
+msgid "Super Saver subscription giving you unlimited access to all"
+msgstr "Super Spar Abonnement Ihnen unbegrenzten Zugang zu alle"
+
+#: views\scripts\user/fitness2/subscriptionyearly.phtml:9
+msgid "our services for"
+msgstr "unsere services für"
+
+#: views\scripts\user/fitness2/subscriptionyearly.phtml:9
+msgid "months"
+msgstr "monate"
+
+#: views\scripts\user/fitness2/viewstats.phtml:285
+#: views\scripts\user/fitness2/viewstats.phtml:286
+#: views\scripts\user/fitness2/viewstats.phtml:287
+msgid "seconds"
+msgstr "sekunden"
+
+#: views\scripts\user/fitness2/viewstats.phtml:285
+#: views\scripts\user/fitness2/viewstats.phtml:286
+#: views\scripts\user/fitness2/viewstats.phtml:291
+#: views\scripts\user/fitness2/viewstats.phtml:292
+msgid "days"
+msgstr "tage"
+
+#: views\scripts\user/fitness2/viewstats.phtml:287
+#: views\scripts\user/fitness2/viewstats.phtml:293
+msgid "total workout time"
+msgstr "Insgesamt Trainingszeit"
+
+#: views\scripts\index/confirm.phtml:1
+msgid "Confirmation"
+msgstr "Bestätigung"
+
+#: views\scripts\index/confirm.phtml:4
+msgid "Thank you for confirming your account with fitness4.me. A mail has been sent to you with your login details. Please login to access your workouts."
+msgstr "Vielen Dank für die Bestätigung Ihres Kontos bei Fitness4me. Eine E-Mail mit Ihren Logindaten wurde an Sie gesendet. Bitte loggen Sie sich ein, um auf Ihre Trainingseinheiten zuzugreifen."
+
+#: views\scripts\index/contactpage.phtml:9
+msgid "Phone"
+msgstr "Telefon"
+
+#: views\scripts\index/contactpage.phtml:11
+msgid "Website"
+msgstr "Webseite"
+
+#: views\scripts\index/contactpage.phtml:13
+msgid "Priority"
+msgstr "Priorität"
+
+#: views\scripts\index/contactpage.phtml:15
+msgid "Low"
+msgstr "Niedrig"
+
+#: views\scripts\index/contactpage.phtml:16
+msgid "Normal"
+msgstr "Normal"
+
+#: views\scripts\index/contactpage.phtml:17
+msgid "High"
+msgstr "Hoch"
+
+#: views\scripts\index/contactpage.phtml:18
+msgid "Emergency"
+msgstr "Notfall"
+
+#: views\scripts\index/contactpage.phtml:22
+msgid "Type"
+msgstr "Typ"
+
+#: views\scripts\index/contactpage.phtml:25
+msgid "Information Change"
+msgstr "Änderung der Informationen"
+
+#: views\scripts\index/contactpage.phtml:26
+msgid "Information Addition"
+msgstr "Ergänzung der Informationen"
+
+#: views\scripts\index/contactpage.phtml:27
+msgid "Website Issues"
+msgstr "FragenzurWebseite"
+
+#: views\scripts\index/contactpage.phtml:31
+msgid "Message"
+msgstr "Nachricht"
+
+#: views\scripts\index/footer.phtml:13
+msgid "Social Media"
+msgstr "Social Media"
+
+#: views\scripts\index/footer.phtml:15
+msgid "Like us on Facebook"
+msgstr "Like uns auf Facebook"
+
+#: views\scripts\index/footer.phtml:16
+#: views\scripts\index/footer.phtml:18
+msgid "Youtube Channel"
+msgstr "Youtube Channel"
+
+#: views\scripts\index/footer.phtml:17
+msgid "Follow us on Twitter"
+msgstr "Verfolge uns auf twitter"
+
+#: views\scripts\index/footer.phtml:22
+msgid "Search"
+msgstr "Suche"
+
+#: views\scripts\index/footer.phtml:26
+msgid "Click or type here to search"
+msgstr "Suchbegriff eingeben"
+
+#: views\scripts\index/footer.phtml:33
+msgid "For Our Clients"
+msgstr "Für unsere Kunden"
+
+#: views\scripts\index/footer.phtml:36
+msgid "Frequently Asked Questions"
+msgstr "FAQ"
+
+#: views\scripts\index/footer.phtml:48
+#: views\scripts\index/footer.phtml:51
+#: views\scripts\index/sitemap.phtml:31
+#: views\scripts\index/sitemap.phtml:34
+msgid "Account Management"
+msgstr "Kontoverwaltung"
+
+#: views\scripts\index/footer.phtml:80
+msgid "Quick Contact"
+msgstr "Kontakt"
+
+#: views\scripts\index/footer.phtml:84
+msgid "Your name"
+msgstr "Nachname"
+
+#: views\scripts\index/footer.phtml:86
+msgid "Your message"
+msgstr "Nachricht"
+
+#: views\scripts\index/footer.phtml:88
+msgid "Enter the code above"
+msgstr "Bitte gebe den Sicherheitscode oben ein"
+
+#: views\scripts\index/footer.phtml:90
+#: views\scripts\index/forgotlogin.phtml:16
+msgid "Send"
+msgstr "Senden"
+
+#: views\scripts\index/footer.phtml:103
+#: views\scripts\index/sitemap.phtml:26
+msgid "Credits"
+msgstr "Impressum"
+
+#: views\scripts\index/footer.phtml:105
+msgid "Sitemap"
+msgstr "Seitenübersicht"
+
+#: views\scripts\index/footer.phtml:107
+msgid "Terms of use"
+msgstr "Nutzungsbedingungen"
+
+#: views\scripts\index/footer.phtml:109
+#: views\scripts\index/sitemap.phtml:28
+msgid "Privacy policy"
+msgstr "Datenschutzerklärung"
+
+#: views\scripts\index/forgotlogin.phtml:1
+#: views\scripts\index/forgotlogin.phtml:5
+msgid "Forgot your password?"
+msgstr "Passwort vergessen"
+
+#: views\scripts\index/forgotlogin.phtml:6
+msgid "Do not worry!"
+msgstr "Keine Sorge!"
+
+#: views\scripts\index/forgotlogin.phtml:7
+msgid "Please type in your email address and we will send you a new one."
+msgstr "Bitte trage deine E-Mail Adresse ein und wir senden dir ein neues Passwort zu."
+
+#: views\scripts\index/forgotlogin.phtml:33
+#: views\scripts\index/login.phtml:26
+msgid "Don't have an account?"
+msgstr "Du hast keinen Account?"
+
+#: views\scripts\index/forgotlogin.phtml:34
+#: views\scripts\index/login.phtml:27
+msgid "Sign Up"
+msgstr "Registrieren"
+
+#: views\scripts\index/login.phtml:1
+#: views\scripts\index/registeruser.phtml:70
+msgid "Sign In"
+msgstr "Anmelden"
+
+#: views\scripts\index/login.phtml:2
+#: views\scripts\index/security.phtml:2
+msgid "Sign in using your username and password"
+msgstr "Logge dich mit deinem Benutzernamen und Passwort ein"
+
+#: views\scripts\index/login.phtml:11
+msgid "Forgot password"
+msgstr "Passwort vergessen"
+
+#: views\scripts\index/registeruser.phtml:1
+#: views\scripts\index/registeruser.phtml:54
+msgid "Register"
+msgstr "Registrieren"
+
+#: views\scripts\index/registeruser.phtml:6
+msgid "First Name"
+msgstr "Vorname"
+
+#: views\scripts\index/registeruser.phtml:10
+msgid "Please enter your Last name"
+msgstr "Bitte geben Sie Ihren Vornamen"
+
+#: views\scripts\index/registeruser.phtml:14
+msgid "Please enter an email.Your email would be confidential"
+msgstr "Bitte hinterlassen Sie uns Ihre Email Adresse, wir verwenden sie vertraulich"
+
+#: views\scripts\index/registeruser.phtml:19
+msgid "Please enter a username"
+msgstr "Bitte geben Sie Ihren Benutzername"
+
+#: views\scripts\index/registeruser.phtml:23
+msgid "Please enter a password"
+msgstr "Bitte geben Sie ein Passwort ein"
+
+#: views\scripts\index/registeruser.phtml:24
+msgid "Please enter a password of minimum 6 characters"
+msgstr "Bitte geben Sie ein Passwort mit mindestens 6 Zeichen ein"
+
+#: views\scripts\index/registeruser.phtml:25
+msgid "Please accept the terms and conditions to register"
+msgstr "Bitte bestätige zur Registrierung die Bedingungen und Allgemeinen Geschäftsbedingungen"
+
+#: views\scripts\index/registeruser.phtml:29
+msgid "Workout Level"
+msgstr "Trainingsstufe"
+
+#: views\scripts\index/registeruser.phtml:48
+msgid "I accept the "
+msgstr "Ich akzeptiere die "
+
+#: views\scripts\index/registeruser.phtml:48
+msgid "terms and conditions"
+msgstr "allgemeinen Geschäftsbedingungen"
+
+#: views\scripts\index/registeruser.phtml:69
+msgid "Already have an account"
+msgstr "Du hast bereits einen Account"
+
+#: views\scripts\index/sitemap.phtml:13
+msgid "Faqs"
+msgstr "FAQ"
+
+#: views\scripts\index/sitemap.phtml:24
+msgid "We Guarantee"
+msgstr "Wir garantieren"
+
+#: views\scripts\index/thankyou.phtml:1
+msgid "Thank you"
+msgstr "Vielen Dank"
+
+#: views\scripts\index/thankyou.phtml:4
+msgid "Thank you for registering with us.<br/> You will shortly receive an email with a confirmation link .<br/>Please click on the link to confirm your account."
+msgstr "Danke, dass Du Dich bei uns angemeldet hast. In Kürze werden wir Dir eine Email mit einem Bestätigungslink zuschicken. Bitte klicke auf den Link, um dein Konto freizuschalten."
+
+#: views\scripts\index/fitness2/footer.phtml:87
+msgid "Please enter a message"
+msgstr "Bitte geben Sie eine Nachricht"
+
+#: views\scripts\index/fitness2/footer.phtml:88
+msgid "Please enter your email"
+msgstr "Bitte geben Sie Ihre E-Mail"
+
+#: layouts/latest/layout_faq.phtml:104
+#: layouts/latest/layout_truth.phtml:116
+msgid "Back to Top"
+msgstr "Zurück zum Anfang"
+
+#: layouts/latest/layout_guarantee.phtml:100
+msgid "We guarantee that you will be satisfied!"
+msgstr "Wir garantieren dir Zufriedenheit!"
+
+#: layouts/latest/layout_home.phtml:1
+msgid "Read more"
+msgstr "Lesen Sie mehr"
+
+#: layouts/latest/layout_marketing.phtml:17
+msgid "Upgrade to Premium Membership and get"
+msgstr "Sichere dir das Upgrade für die Premium- Mitgliedschaft und erhalte"
+
+#: layouts/latest/layout_marketing.phtml:18
+msgid "Your own Personal Gym"
+msgstr "dein persönliches Fitnessstudio"
+
+#: layouts/latest/layout_marketing.phtml:19
+msgid "that will follow you anywhere you go"
+msgstr "das dich überall hin begleitet"
+
+#: layouts/latest/layout_news.phtml:124
+msgid "Categories"
+msgstr "Kategorien"
+
+#: layouts/latest/layout_news.phtml:142
+msgid "Archives"
+msgstr "Archive"
+
+#: layouts/latest/layout_truth.phtml:102
+msgid "The truth about"
+msgstr "Die Wahrheit über"
+
+#~ msgid "amount of personalized workouts"
+#~ msgstr "personalisierte workouts"
+
+#, fuzzy
+#~ msgid "Membership Plans"
+#~ msgstr "Mitgliedschaftsplan"
+
+#~ msgid "Upgrade to Premium Membership"
+#~ msgstr "Sichere dir das Upgrade für die Premium-Mitgliedschaft"
+
+#~ msgid ""
+#~ "Please note that changing the workout level will change the duration of "
+#~ "the workouts."
+#~ msgstr ""
+#~ "Bitte beachte, dass die Zeitdauer der Trainingseinheit verändert wird."
+
+#~ msgid "An account for this email already exists."
+#~ msgstr "Ein Konto ist für diese E-Mail Adresse bereits vorhanden"
+
+#~ msgid "Email/Username exists. Please enter another one."
+#~ msgstr "Username existiert bereits. Bitte geben Sie einen anderen ein."
+
+#~ msgid "Surname"
+#~ msgstr "Nachname"
+
+#~ msgid "Latest Workout programs"
+#~ msgstr "AktuelleTrainingsprogramme"
+
+#~ msgid "Latest 3 workouts"
+#~ msgstr "Liste der  10-minütige Trainingseinheiten"
+
+#~ msgid ""
+#~ "Please click on the button below to proceed.<br/> Your workout will be "
+#~ "unlocked in a few minutes after successful payment."
+#~ msgstr ""
+#~ "Bitte klicke auf den nachstehenden Button um fortzufahren. Dein Workout "
+#~ "wird wenige Minuten nach der erfolgreichen Zahlungsabwicklung "
+#~ "freigeschaltet."
+
+#~ msgid "workout Level"
+#~ msgstr "Trainingsstufe"
+
+#~ msgid "Unlock Single Workouts"
+#~ msgstr "Einzelne Trainingseinheiten freischalten"

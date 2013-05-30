@@ -1,0 +1,45 @@
+
+<div class="sidebar">
+
+
+       <p>
+       <a href="<?php echo $this->url(array('controller'=>'admin',
+                                        'action'=>'homeuser'), $name = null, $reset = true);?>">Home</a>
+       
+       | <a href="<?php echo $this->url(array('controller'=>'admin',
+                                        'action'=>'listworks'), $name = null, $reset = true);?>/active/1">Workout Management</a>
+                                        
+        | <a href="<?php echo $this->url(array('controller'=>'admin',
+                                        'action'=>'listpages'), $name = null, $reset = true);?>">Website Content Management</a>    
+     
+      | <a href="<?php echo $this->url(array('controller'=>'admin',
+                                        'action'=>'listlanguages'), $name = null, $reset = true);?>">Multilanguage</a>
+										
+										
+       | <a href="<?php echo $this->url(array('controller'=>'admin',
+                                        'action'=>'listcodes'), $name = null, $reset = true);?>">Promotion Code</a>                              
+
+  | <a href="<?php echo $this->url(array('controller'=>'admin',
+                                        'action'=>'listplans'), $name = null, $reset = true);?>">Membership Plan</a> 
+                                                                                                                      
+   | <a href="<?php echo $this->url(array('controller'=>'admin',
+                                        'action'=>'userstats'), $name = null, $reset = true);?>">User Statistics</a>     
+										
+ | <a href="<?php echo $this->url(array('controller'=>'admin',
+                                        'action'=>'listpayments'), $name = null, $reset = true);?>">Payment</a>           
+                                                                  
+                                        <?php if($this->loginStatus == 1){?>
+
+| <a href="<?php echo $this->url(array('controller'=>'admin',
+                                        'action'=>'logout'), $name = null, $reset = true);?>">Logout</a>
+<?php }else{ ?>
+
+|<a href="<?php echo $this->url(array('controller'=>'admin',
+                                        'action'=>'index'), $name = null, $reset = true);?>">Login</a></p>
+<?php } ?>
+
+
+</p>
+                                        
+        
+        </div>

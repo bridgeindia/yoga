@@ -1,0 +1,19 @@
+<p><?php include("admin_sidebar.phtml");?></p>
+<div class="language_block">
+<?php include("users_menu.phtml"); ?>
+<table>
+<tr><th>Last 3 workouts</th></tr>
+<?php foreach($this->userWorkoutData as $workoutdone){ ?>
+
+<tr><td><?php echo $workoutdone['workout_name']; ?></td></tr>
+
+<?php } ?>
+
+
+<tr><th>Total workout Time</th></tr>
+<tr><td><?php echo round((($this->userWorkoutTime)/60),0);?> minutes</td></tr>
+</table>
+
+
+
+</div>

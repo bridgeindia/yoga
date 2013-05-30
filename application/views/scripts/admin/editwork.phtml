@@ -1,0 +1,183 @@
+
+<p><?php include("exercise_menu.phtml");?></p>
+<div class="language_block" style="float:left;">
+<?php include("work_menu.phtml"); ?>
+<?php $siteUrl            = 'http://'.$_SERVER['SERVER_NAME'].':'.$_SERVER['SERVER_PORT'] .$this->baseUrl(); ?>
+<form name="addWork" method="POST" action="" onsubmit="return validateWorkForm();" enctype="multipart/form-data">
+<table>
+<tr><td>Workout Name</td><td><input type="text" name="work_name" value="<?php echo $this->workname; ?>"></td></tr>
+
+<!--<tr><td>Workout Duration(in minutes)</td><td>
+<select name="work_duration" <?php if($this->langId != ""){echo "disabled";} ?>>
+<option value="10" <?php if($this->workData['work_duration'] == 10){echo "selected";}?>>10</option>
+<option value="20" <?php if($this->workData['work_duration'] == 20){echo "selected";}?>>20</option>
+<option value="30" <?php if($this->workData['work_duration'] == 30){echo "selected";}?>>30</option>
+</select>
+</td></tr>-->
+<tr><td>Workout Level</td><td>
+<select name="work_level" <?php if($this->langId != ""){echo "disabled";} ?> onchange="loadExercises(this.value,'<?php echo implode(',',$this->exercises);?>','<?php echo $siteUrl; ?>');">
+<option value="1" <?php if($this->workData['work_level'] == 1){echo "selected";}?>>Beginners</option>
+<option value="2" <?php if($this->workData['work_level'] == 2){echo "selected";}?>>Advanced</option>
+<option value="3" <?php if($this->workData['work_level'] == 3){echo "selected";}?>>Expert</option>
+</select>
+</td></tr>
+<!--
+<tr><td>Workout Recovery Time</td><td>
+<select name="work_recovery_time" <?php if($this->langId != ""){echo "disabled";} ?>>
+<option value="">Choose Recovery Time</option>
+<option value="15" <?php if($this->workData['work_recovery_time'] == 15){echo "selected";}?>>15</option>
+<option value="30" <?php if($this->workData['work_recovery_time'] == 30){echo "selected";}?>>30</option>
+
+</select>
+</td></tr>
+
+<tr><td>Workout Recovery Interval</td><td>
+<select name="work_recovery_interval" <?php if($this->langId != ""){echo "disabled";} ?>>
+<option value="">Choose Recovery Interval</option>
+<option value="1" <?php if($this->workData['work_recovery_interval'] == 1){echo "selected";}?>>After Each Exercise</option>
+<option value="2" <?php if($this->workData['work_recovery_interval'] == 2){echo "selected";}?>>After every 2 Exercises</option>
+<option value="3" <?php if($this->workData['work_recovery_interval'] == 3){echo "selected";}?>>After every 3 Exercises</option>
+<option value="4" <?php if($this->workData['work_recovery_interval'] == 4){echo "selected";}?>>After every 4 Exercises</option>
+<option value="5" <?php if($this->workData['work_recovery_interval'] == 5){echo "selected";}?>>After every 5 Exercises</option>
+<option value="6" <?php if($this->workData['work_recovery_interval'] == 6){echo "selected";}?>>After every 6 Exercises</option>
+</select>
+</td></tr>
+-->
+<tr><td>Select Exercises</td>
+<td>
+ 
+<select name="exercises" multiple size="12" <?php if($this->langId != ""){echo "disabled";} ?> id="ajaxExercises">
+<option value="">Select one or more Exercises</option>
+<!--<?php foreach($this->listExercises as $exercise)
+{  ?>
+
+<option value="<?php echo $exercise['exercise_id']; ?>" <?php if(in_array($exercise['exercise_id'],$this->exercises)){echo "selected";} ?>><?php echo $exercise['exercise_name']; ?></option>
+	
+<?php } ?>-->
+
+</select>
+</td></tr>
+
+<?php if($this->langId != ""){ ?>
+<tr><td>One Liner</td><td><input type="text" name="description_small" value="<?php echo $this->workmulti['description_small']; ?>"></td></tr>
+<tr><td>Description (detail)</td><td><textarea cols="30" rows="5" name="description_big"><?php echo $this->workmulti['description_big']; ?></textarea></td></tr>
+<?php } ?>
+<tr><td>Upload image</td><td><a href="javascript:void(0);" onclick="myimagecrop('<?php echo $this->workId; ?>');"><img src="<?php echo $this->baseUrl;?>/yoga/public/images/upload.jpg" /></a></td></tr>
+<tr><td><image src="<?php echo $this->baseUrl();?>/public/images/exercises/<?php echo $this->workData['work_image_list']; ?>" /></td></tr>
+</table>
+<table>
+<?php if($this->langId == ""){ ?>
+<tr><td>Lose Weight</td><td><input type="checkbox" name="filter" value="Lose Weight" <?php if(strstr($this->workData['work_filter'],'Lose Weight')){echo "checked";}?>></td><td>Total Body</td><td><input type="checkbox" name="filter" value="Total Body" <?php if(strstr($this->workData['work_filter'],'Total Body')){echo "checked";}?>></td><td>Flexibility</td><td><input type="checkbox" name="filter" value="Flexibility" <?php if(strstr($this->workData['work_filter'],'Flexibility')){echo "checked";}?>></td></tr>
+<tr><td>Upper Body</td><td><input type="checkbox" name="filter" value="Upper Body" <?php if(strstr($this->workData['work_filter'],'Upper Body')){echo "checked";}?>></td><td>Buttocks</td><td><input type="checkbox" name="filter" value="Buttocks" <?php if(strstr($this->workData['work_filter'],'Buttocks')){echo "checked";}?>></td><td>Shoulder</td><td><input type="checkbox" name="filter" value="Shoulder" <?php if(strstr($this->workData['work_filter'],'Shoulder')){echo "checked";}?>></td></tr>
+<tr><td>Stomach</td><td><input type="checkbox" name="filter" value="Stomach" <?php if(strstr($this->workData['work_filter'],'Stomach')){echo "checked";}?>></td><td>Biceps</td><td><input type="checkbox" name="filter" value="Biceps" <?php if(strstr($this->workData['work_filter'],'Biceps')){echo "checked";}?>></td><td>Neck</td><td><input type="checkbox" name="filter" value="Neck" <?php if(strstr($this->workData['work_filter'],'Neck')){echo "checked";}?>></td></tr>
+<tr><td>Legs</td><td><input type="checkbox" name="filter" value="Legs" <?php if(strstr($this->workData['work_filter'],'Legs')){echo "checked";}?>></td><td>Triceps</td><td><input type="checkbox" name="filter" value="Triceps" <?php if(strstr($this->workData['work_filter'],'Triceps')){echo "checked";}?>></td><td>Back</td><td><input type="checkbox" name="filter" value="Back" <?php if(strstr($this->workData['work_filter'],'Back')){echo "checked";}?>></td></tr>
+<tr><td>Stomach/Legs/Buttocks</td><td><input type="checkbox" name="filter" value="Stomach/Legs/Buttocks" <?php if(strstr($this->workData['work_filter'],'Stomach/Legs/Buttocks')){echo "checked";}?>></td>
+<td>Core</td><td><input type="checkbox" name="filter" value="Core" <?php if(strstr($this->workData['work_filter'],'Core')){echo "checked";}?>></td></tr>
+<?php } ?>
+<tr><td><input type="hidden" name="exerciseslist" value=""></td></tr>
+<tr><td><input type="hidden" name="filterlist" value=""></td></tr>
+<tr><td><input type="hidden" name="activestatus" value=""></td></tr>
+
+<tr><td><input type="hidden" name="work_image" value="<?php echo $this->workData['work_image_list']; ?>"></td></tr>
+<tr><td><input type="hidden" name="work_id" value="<?php echo $this->workId; ?>"></td></tr>
+<tr><td><input type="hidden" name="langId" value="<?php echo $this->langId; ?>"></td></tr>
+<tr><td>Activate Workout</td><td><input type="checkbox" name="isactive" value="1" <?php if($this->adminType == 2){ echo "disabled";}?> <?php if($this->workData['isactive'] == 1){echo "checked";}?>></td></tr>
+<tr><td height="8"></td></tr>
+<tr><td>
+Free Workout ?
+
+</td><td><input type="checkbox" name="isfree" value="1" <?php if($this->adminType == 2){ echo "disabled";}?> <?php if($this->workData['status'] == 1){echo "checked";}?>></td></tr>
+<tr><td colspan="2"><input type="submit" name="workSubmit" value="Update Workout" class="noWarn"></td></tr>
+</table>
+
+
+</form>
+
+</div>
+<?php if(($this->langId == "")&&($this->adminType == 1)){?>
+	
+
+<div id="contentLeft" style="margin-top:50px;background:none repeat scroll 0 0 #CCCCCC;margin-left:20px;width:350px;float:left;padding-top:10px;">
+<p>Drag and Drop to Reorder Exercises</p>
+<ul style="list-style:none;margin-left:20px;margin-right:20px;">
+
+<?php 
+$sortStr  = "";
+if(count($this->sortCompleteExercises) < 1)
+{
+	
+
+	foreach($this->sortExercises as $exercise)
+	{ 
+	   if($exercise['id'] !=""){
+	   	
+	  $sortStr = $sortStr .$exercise['id'].",";
+	 ?>
+	
+	<li id="recordsArray_<?php echo $exercise['id']; ?>" style="background:#45403D;color:#fff;margin-bottom:10px;;padding-left:5px;height:25px;"><?php echo $exercise['name']; ?></li>
+		
+	<?php }}
+	
+	}else {
+	
+	foreach($this->sortCompleteExercises as $exercise)
+	{ 
+	   if($exercise['id'] !=""){
+	   	$sortStr = $sortStr .$exercise['id'].",";
+	  
+	 ?>
+	
+	<li id="recordsArray_<?php echo $exercise['id']; ?>" style="background:#45403D;color:#fff;margin-bottom:10px;;padding-left:5px;height:25px;"><?php echo $exercise['name']; ?></li>
+	<?php }}
+	
+	if(count($this->sortDiffExercises > 0))
+	{
+		foreach($this->sortDiffExercises as $diff)
+		{
+			if($diff['id'] != ""){
+			$sortStr = $sortStr .$diff['id'].",";
+			?>
+			<li id="recordsArray_<?php echo $diff['id']; ?>" style="background:#45403D;color:#fff;margin-bottom:10px;;padding-left:5px;height:25px;"><?php echo $diff['name']; ?></li>
+				
+			<?php }
+		}
+	}
+	
+	} ?>
+<li id="workout_<?php echo $this->workId; ?>" style="display:none;"></li>
+
+</ul>
+
+</div>
+<?php } ?>
+<?php if(!empty($this->workmultiDataTranslate)){?>
+	
+
+<div style="margin-top:50px;background:none repeat scroll 0 0 #CCCCCC;margin-left:10px;width:550px;float:left;padding-top:10px;">
+<table>
+<tr><td>Title</td><td><?php echo $this->workmultiDataTranslate['work_name']; ?></td></tr>
+<tr><td height="6"></td></tr>
+<tr><td>One Liner</td><td><?php echo $this->workmultiDataTranslate['description_small']; ?></td></tr>
+<tr><td height="6"></td></tr>
+<tr><td valign="top">Description</td><td><?php echo $this->workmultiDataTranslate['description_big']; ?></td></tr>
+</table> 
+</div>
+<?php } ?>
+<script>
+
+//var level = <?php echo $this->workData['work_level'];?>;
+//if(level=="")
+level     = 1;
+
+loadExercises(level,'<?php echo implode(',',$this->exercises);?>','<?php echo $siteUrl; ?>');
+
+function myimagecrop(exerciseid)
+{
+	var left = (screen.width/2)-(600/2);
+    var top = (screen.height/2)-(600/2);
+    
+    mywindow = window.open ('<?php echo $this->url(array('controller'=>'admin',
+                                        'action'=>'cropimageworkout'), $name = null, $reset = true);?>/exercise/'+exerciseid, 'mywindow','location=1,status=1,scrollbars=1, width=800,height=600,top='+top+', left='+left);
+    
+}
+</script>

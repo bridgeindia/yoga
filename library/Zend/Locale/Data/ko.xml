@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ldml>
+	<identity>
+		<version number="$Revision: 1.140 $"/>
+		<generation date="$Date: 2009/06/15 17:12:26 $"/>
+		<language type="ko"/>
+	</identity>
+	<localeDisplayNames>
+		<localeDisplayPattern>
+			<localePattern>{0}({1})</localePattern>
+			<localeSeparator>, </localeSeparator>
+		</localeDisplayPattern>
+		<languages>
+			<language type="aa">아파르어</language>
+			<language type="ab">압카즈어</language>
+			<language type="ace">아체어</language>
+			<language type="ach">아콜리어</language>
+			<language type="ada">아당메어</language>
+			<language type="ady">아닥헤어</language>
+			<language type="ae">아베스타어</language>
+			<language type="af">남아공 공용어</language>
+			<language type="afa">아시아-아프리카어 (기타)</language>
+			<language type="afh">아프리히리어</language>
+			<language type="ain">아이누어</language>
+			<language type="ak">아칸어</language>
+			<language type="akk">아카드어</language>
+			<language type="ale">알류트어</language>
+			<language type="alg">알공킨어족</language>
+			<language type="alt">남부 알타이어</language>
+			<language type="am">암하라어</language>
+			<language type="an">아라곤어</language>
+			<language type="ang">고대 영어</language>
+			<language type="anp">앙가어</language>
+			<language type="apa">아파치어</language>
+			<language type="ar">아랍어</language>
+			<language type="arc">아람어</language>
+			<language type="arn">아라우칸어</language>
+			<language type="arp">아라파호어</language>
+			<language type="art">기계어 (기타)</language>
+			<language type="arw">아라와크어</language>
+			<language type="as">아샘어</language>
+			<language type="ast">아스투리아어</language>
+			<language type="ath">아타파스카어군</language>
+			<language type="aus">오스트레일리아어족</language>
+			<language type="av">아바릭어</language>
+			<language type="awa">아와히어</language>
+			<language type="ay">아이마라어</language>
+			<language type="az">아제르바이잔어</language>
+			<language type="ba">바슈키르어</language>
+			<language type="bad">반다어</language>
+			<language type="bai">바밀레케어족</language>
+			<language type="bal">발루치어</language>
+			<language type="ban">발리어</language>
+			<language type="bas">바사어</language>
+			<language type="bat">발트어 (기타)</language>
+			<language type="be">벨로루시어</language>
+			<language type="bej">베자어</language>
+			<language type="bem">벰바어</language>
+			<language type="ber">베르베르어</language>
+			<language type="bg">불가리아어</language>
+			<language type="bh">비하르어</language>
+			<language type="bho">호즈푸리어</language>
+			<language type="bi">비슬라마어</language>
+			<language type="bik">비콜어</language>
+			<language type="bin">비�
